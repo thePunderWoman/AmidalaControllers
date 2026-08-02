@@ -25,10 +25,23 @@ jobs:
           key: ${{ runner.os }}-platformio-native-${{ hashFiles('platformio.ini') }}
 
       - name: Install PlatformIO
-        run: pip install --upgrade platformio
+        run: pip install --upgrade platformio gcovr
 
       - name: Run native unit tests
         run: pio test -e native
+
+      - name: Coverage report
+        run: |
+          output=$(gcovr --root . --filter 'src/' --exclude 'src/main\.cpp' --print-summary --fail-under-line 90)
+          status=$?
+          {
+            echo '### Coverage (src/, excluding main.cpp)'
+            echo '```'
+            echo "$output"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "$output"
+          exit $status
 
   kb2040-build:
     runs-on: ubuntu-latest
