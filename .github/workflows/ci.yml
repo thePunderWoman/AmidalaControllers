@@ -1,4 +1,4 @@
-name: Tests
+name: CI
 
 on:
   push:
@@ -7,8 +7,16 @@ on:
     branches: [main]
 
 jobs:
-  native-tests:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - env: native
+            run: pio test -e native
+          - env: kb2040
+            run: pio run -e kb2040
     steps:
       - uses: actions/checkout@v4
 
@@ -22,10 +30,10 @@ jobs:
           path: |
             ~/.cache/pip
             ~/.platformio
-          key: ${{ runner.os }}-platformio-${{ hashFiles('platformio.ini') }}
+          key: ${{ runner.os }}-platformio-${{ matrix.env }}-${{ hashFiles('platformio.ini') }}
 
       - name: Install PlatformIO
         run: pip install --upgrade platformio
 
-      - name: Run native unit tests
-        run: pio test -e native
+      - name: Run ${{ matrix.env }}
+        run: ${{ matrix.run }}
