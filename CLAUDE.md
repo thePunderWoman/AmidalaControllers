@@ -6,6 +6,7 @@
 - All new logic should have unit tests in `test/` to prevent regressions.
 - Tests run on the native PlatformIO environment (no hardware required) — keep them that way. Do not introduce test dependencies that require Arduino or physical hardware.
 - When fixing a bug, add a test that would have caught it.
+- CI enforces a minimum line-coverage threshold (via `gcovr`, currently 90%) on `src/`, excluding `main.cpp` (Arduino-only, can't run on native). Keep new logic covered well enough to not drop below that bar — don't lower the threshold in `.github/workflows/ci.yml` just to unblock a PR; that's a deliberate call for a human to make.
 
 **Bug fixes and regression test**
 - Any time you fix a bug, that bugfix should be covered by a new regression test.
