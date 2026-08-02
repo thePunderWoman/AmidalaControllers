@@ -7,16 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  native-tests:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - env: native
-            run: pio test -e native
-          - env: kb2040
-            run: pio run -e kb2040
     steps:
       - uses: actions/checkout@v4
 
@@ -30,10 +22,33 @@ jobs:
           path: |
             ~/.cache/pip
             ~/.platformio
-          key: ${{ runner.os }}-platformio-${{ matrix.env }}-${{ hashFiles('platformio.ini') }}
+          key: ${{ runner.os }}-platformio-native-${{ hashFiles('platformio.ini') }}
 
       - name: Install PlatformIO
         run: pip install --upgrade platformio
 
-      - name: Run ${{ matrix.env }}
-        run: ${{ matrix.run }}
+      - name: Run native unit tests
+        run: pio test -e native
+
+  kb2040-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Cache PlatformIO
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.platformio
+          key: ${{ runner.os }}-platformio-kb2040-${{ hashFiles('platformio.ini') }}
+
+      - name: Install PlatformIO
+        run: pip install --upgrade platformio
+
+      - name: Build kb2040 firmware
+        run: pio run -e kb2040
