@@ -231,4 +231,15 @@
 		(solder_mask_margin 0.1)
 		(uuid "193cb559-d28d-4908-8fe7-4aba5b3df418")
 	)
+	(model "${KIPRJMOD}/libraries/3dmodels/Thumbstick_ALPS_RKJXV1224005.step"
+		(offset
+			(xyz 0 0 11.4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

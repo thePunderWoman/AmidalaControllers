@@ -731,9 +731,31 @@
 			(uuid "aa2e932f-b76b-4f23-8089-f0eef34ca434")
 		)
 		(embedded_fonts no)
-		(model "XB3-24Z8UT-J.stp"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.00mm.3dshapes/PinSocket_1x10_P2.00mm_Vertical.step"
 			(offset
-				(xyz 11.02000029 -6.099999813 2.749999959)
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.00mm.3dshapes/PinSocket_1x10_P2.00mm_Vertical.step"
+			(offset
+				(xyz 22 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/libraries/3dmodels/XBee3_TH_UFL_placeholder.step"
+			(offset
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2406,6 +2428,17 @@
 			(uuid "8ed66150-4072-49df-8941-3c4f50257844")
 		)
 		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -4756,7 +4789,7 @@
 			(uuid "277f27be-444d-4f29-b184-1aeb2d7bd82a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5752,10 +5785,9 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_espressif_kicad-libraries/espressif.3dshapes/ESP32-S3-WROOM-1.STEP"
-			(opacity 0.7500)
+		(model "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-S3-WROOM-1.step"
 			(offset
-				(xyz -9 -9.75 0)
+				(xyz 0 3 0)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -6180,7 +6212,7 @@
 			(uuid "36732b12-fe90-497e-b960-37111289038e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8231,7 +8263,7 @@
 			(uuid "b6efcf88-2be2-4835-8a16-95f9a484f2c5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9217,15 +9249,15 @@
 			(uuid "54c491e6-1186-429c-9562-112dfbe29e7c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -1.05 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -9670,6 +9702,17 @@
 			(uuid "48ae7bf1-8e41-47e8-8b4d-8f16664a84c1")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/Thumbstick_ALPS_RKJXV1224005.step"
+			(offset
+				(xyz 0 0 11.4)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -11497,7 +11540,7 @@
 			(uuid "9aa2e4de-b5b2-4bb1-ad5f-898531217c9a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12110,7 +12153,7 @@
 			(uuid "69939839-9a6a-40a8-9b1c-2abe43824a62")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14012,7 +14055,7 @@
 			(uuid "1b662fd0-6556-4137-8012-1e98870bb0b3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010.step"
+		(model "${KIPRJMOD}/libraries/3dmodels/SW_Alps_SKRTLAE010.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16848,6 +16891,17 @@
 			(uuid "32a16b97-ac89-4fd9-af57-3ac79f9a11df")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/3dmodels/QMA6100P_LGA-12_2x2mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Diode_SMD:D_SOD-123"
 		(layer "B.Cu")
@@ -22001,6 +22055,17 @@
 			(uuid "de4cb4e4-7bab-43fe-ba65-d765b737dbe8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/libraries/BQ25185DLHR/BQ25185DLHR.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "B.Cu")

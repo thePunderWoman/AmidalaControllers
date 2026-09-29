@@ -42,4 +42,15 @@
 	(pad "4" smd roundrect (at 2.27 1.06) (size 1.34 0.68)
 		(layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25)
 	)
+	(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

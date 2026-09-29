@@ -173,4 +173,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "0323875c-07f1-4c25-a0a6-76d0e9887b27")
 	)
+	(model "${KIPRJMOD}/libraries/3dmodels/QMA6100P_LGA-12_2x2mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
