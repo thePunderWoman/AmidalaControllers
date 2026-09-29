@@ -1711,4 +1711,15 @@
   (fp_line (start 1.55 -1.25) (end -1.55 -1.25) (layer F.CrtYd) (width 0.05))
   (fp_circle (center -1.95 -0.8) (end -1.85 -0.8) (layer F.SilkS) (width 0.2))
   (fp_circle (center -1.95 -0.8) (end -1.85 -0.8) (layer F.Fab) (width 0.2))
+	(model "${KIPRJMOD}/libraries/BQ25185DLHR/BQ25185DLHR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )
