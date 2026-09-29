@@ -1,7 +1,7 @@
 # SPICE check for the Power_Control soft-latch
 
 `latch_sim.py` simulates the button, inverter, diode-OR, latch FET and power PMOS from
-`PCB/power_control.kicad_sch` and asserts the behavior we need. ERC, DRC and the netlist only prove
+`PCB/stackup/board.kdl` and asserts the behavior we need. DRC and the netlist only prove
 the wiring; they cannot show that a gate is driven high enough or that a power-up transient stays
 quiet. This was written after exactly that kind of bug got through (see PRs #58-#60).
 
@@ -26,7 +26,7 @@ Set `NGSPICE_LIB` to use a different copy. No Python packages are needed.
 
 ## Keeping it in sync
 
-The netlist is written by hand to mirror the schematic. When `power_control.kicad_sch` changes
+The netlist is written by hand to mirror the Stackup power-control circuit. When it changes
 (values, a new part on the latch/sense/EN nodes, a different FET), update the constants and topology
 at the top of `latch_sim.py` and rerun. Treat a red run as a design problem first and a model problem
 second, but do sanity-check the model too: an arbitrary 1uF on the EN pin once produced a fake

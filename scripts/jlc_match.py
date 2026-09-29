@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 """Match SnipsControllers BOM parts to JLCPCB/LCSC part numbers.
 
-Exports a grouped BOM from the schematic (by Manufacturer + MPN, which every
-part in this project already carries as the 'MF' and 'Manufacturer_Part_Number'
-fields) and looks each one up against JLCPCB's public component-search
-endpoint -- the same one jlcpcb.com's own website search box uses. No API key
+Groups the Stackup parts by manufacturer, MPN, Value and footprint, then looks
+each group up against JLCPCB's public component-search endpoint -- the same
+one jlcpcb.com's own website search box uses. No API key
 needed; it's the unauthenticated site-search API, not the registered OpenAPI.
 
-This only produces a report. It does not touch the schematic -- review the
-output, then a separate step writes confirmed matches back in as an 'LCSC'
-field for the Fabrication Toolkit plugin to pick up.
+This only produces a report. Review the output, then a separate step writes
+confirmed matches into Stackup and the PCB's LCSC fields.
 
 Usage:
     python3 scripts/jlc_match.py
@@ -19,16 +17,11 @@ import argparse
 import csv
 import json
 import re
-import shutil
-import subprocess
-import sys
-import tempfile
 import time
 import urllib.error
 import urllib.request
-from pathlib import Path
+from stackup_parts import read_bom_rows
 
-KICAD_CLI_FALLBACK = "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli"
 JLC_SEARCH_URL = (
     "https://jlcpcb.com/api/overseas-pcb-order/v1/"
     "shoppingCart/smtGood/selectSmtComponentList/v2"
@@ -48,37 +41,11 @@ PACKAGE_RE = re.compile(
 )
 
 
-def find_kicad_cli():
-    found = shutil.which("kicad-cli")
-    if found:
-        return found
-    if Path(KICAD_CLI_FALLBACK).exists():
-        return KICAD_CLI_FALLBACK
-    sys.exit("kicad-cli not found on PATH or at the default macOS install location")
-
-
-def export_bom(kicad_cli, sch_path):
-    with tempfile.NamedTemporaryFile(suffix=".csv", delete=False) as f:
-        out_path = f.name
-    try:
-        subprocess.run(
-            [
-                kicad_cli, "sch", "export", "bom",
-                "--fields", "Reference,Value,Footprint,MF,Manufacturer_Part_Number,DNP",
-                "--labels", "Refs,Value,Footprint,MF,MPN,DNP",
-                "--group-by", "MF,Manufacturer_Part_Number,Value,Footprint",
-                "--ref-range-delimiter", "",
-                "-o", out_path,
-                str(sch_path),
-            ],
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-        with open(out_path, newline="") as f:
-            return list(csv.DictReader(f))
-    finally:
-        Path(out_path).unlink(missing_ok=True)
+def export_bom():
+    return [
+        {key: row[key] for key in ("Refs", "Value", "Footprint", "MF", "MPN", "DNP")}
+        for row in read_bom_rows()
+    ]
 
 
 def normalize(s):
@@ -251,13 +218,11 @@ def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("--sch", default="PCB/snips_controller.kicad_sch")
     parser.add_argument("--out", default=None, help="Write results CSV here")
     parser.add_argument("--delay", type=float, default=0.4, help="Seconds between API requests")
     args = parser.parse_args()
 
-    kicad_cli = find_kicad_cli()
-    rows = export_bom(kicad_cli, Path(args.sch))
+    rows = export_bom()
 
     results = []
     for row in rows:

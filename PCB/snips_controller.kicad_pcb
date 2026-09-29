@@ -30,7 +30,7 @@
 		(29 "B.CrtYd" user "B.Courtyard")
 		(35 "F.Fab" user)
 		(33 "B.Fab" user)
-		(39 "User.1" user)
+		(39 "User.1" user "stackup")
 		(41 "User.2" user)
 		(43 "User.3" user)
 		(45 "User.4" user)
@@ -172,7 +172,7 @@
 				)
 			)
 		)
-		(property "Value" "XBee3 | XB3-24Z8UT-J | Digi International | XBee through-hole"
+		(property "Value" "XBee3"
 			(at 10.795 6.097 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -284,9 +284,43 @@
 				)
 			)
 		)
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/20df6608-50e4-4743-b1f8-a2ad985de64a")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(property "Stackup Path" "U_XBEE1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "17badbfa-0933-46b3-84bb-7c75fa7c4141")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:108"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8d230a52-b304-4101-97b8-7d9d43f7d5b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "888-XB3-24Z8UT-J"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "01138f70-6055-4bc7-b4c8-ee15ffc72af9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/39a73dc3-af09-5c61-8628-ae011dd3549c")
 		(units
 			(unit
 				(name "A")
@@ -527,7 +561,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-DOUT{slash}DIO13-Pad2)")
 			(pinfunction "DOUT/DIO13_2")
 			(pintype "passive+no_connect")
 			(uuid "afa08359-d46b-439a-b526-06d9bda45eb3")
@@ -538,7 +571,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-DIN{slash}~{CONFIG}{slash}DIO14-Pad3)")
 			(pinfunction "DIN/~{CONFIG}/DIO14_3")
 			(pintype "passive+no_connect")
 			(uuid "04eb8937-37e8-4729-9906-3b17b6888c00")
@@ -571,7 +603,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-RSSI_PWM{slash}DIO10-Pad6)")
 			(pinfunction "RSSI_PWM/DIO10_6")
 			(pintype "passive+no_connect")
 			(uuid "d2ed46bf-70e4-4b6e-b017-deed28ec320f")
@@ -582,7 +613,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-PWM1{slash}DIO11-Pad7)")
 			(pinfunction "PWM1/DIO11_7")
 			(pintype "passive+no_connect")
 			(uuid "1ac22600-e1c2-420e-9ebe-d4d36c06ab80")
@@ -593,7 +623,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-[RESERVED]_1-Pad8)")
 			(pinfunction "[RESERVED]_1_8")
 			(pintype "passive+no_connect")
 			(uuid "2542026c-90f4-424f-9498-76daeb873bbd")
@@ -637,7 +666,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-~{CTS}{slash}DIO7-Pad12)")
 			(pinfunction "~{CTS}/DIO7_12")
 			(pintype "passive+no_connect")
 			(uuid "31a0a8b5-6250-4106-a73c-bbdcb11cd52a")
@@ -659,7 +687,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-[RESERVED]_2-Pad14)")
 			(pinfunction "[RESERVED]_2_14")
 			(pintype "passive+no_connect")
 			(uuid "f6ea79a2-e2a7-40e3-b052-f2cfed4cef5f")
@@ -670,7 +697,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-ASSOCIATE{slash}DIO5-Pad15)")
 			(pinfunction "ASSOCIATE/DIO5_15")
 			(pintype "passive+no_connect")
 			(uuid "adcd9d36-21f6-4e02-8cee-2f78bab03e7e")
@@ -681,7 +707,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-~{RTS}{slash}DIO6-Pad16)")
 			(pinfunction "~{RTS}/DIO6_16")
 			(pintype "passive+no_connect")
 			(uuid "c719359b-b35a-49c9-934a-d85e69b31365")
@@ -725,7 +750,6 @@
 			(drill 0.92)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U_XBEE1-AD0_{slash}DIO0-Pad20)")
 			(pinfunction "AD0_/DIO0_20")
 			(pintype "passive+no_connect")
 			(uuid "aa2e932f-b76b-4f23-8089-f0eef34ca434")
@@ -783,7 +807,7 @@
 				)
 			)
 		)
-		(property "Value" "6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm"
+		(property "Value" "6x6x5mm SMD Tactile"
 			(at 1.3025 5.36 0)
 			(layer "F.Fab")
 			(uuid "ea0a7bfd-097f-4a8a-b22e-204aff5be004")
@@ -859,9 +883,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/432498ed-d8d6-4223-ba46-a315397f841a")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_MACRO2"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "53e9aa3c-9709-4855-b991-57567e8d1b0c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:91"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "48f74fba-4095-48d5-9b59-aa6198799591")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/de64dc5c-0afc-5009-9c08-977dd1c6fcff")
 		(units
 			(unit
 				(name "A")
@@ -1285,7 +1331,7 @@
 				)
 			)
 		)
-		(property "Value" "6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm"
+		(property "Value" "6x6x5mm SMD Tactile"
 			(at 0 3.81 0)
 			(layer "F.Fab")
 			(uuid "5a535ea9-e8dd-4c29-bbda-86f0df694c76")
@@ -1361,9 +1407,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/484b1158-2183-467f-8180-ff44af89556e")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_MACRO5"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d69c5078-c5eb-406c-b6f5-a9708d2004e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:94"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "53b6fcf4-640d-4160-87e7-e7e5e342b71c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/8aed31f2-744d-5834-9600-85985d20a583")
 		(units
 			(unit
 				(name "A")
@@ -1775,7 +1843,7 @@
 		(at 126.5 86)
 		(descr "Mounting Hole 2mm, no annular, generated by kicad-footprint-generator mountinghole.py")
 		(tags "mountinghole")
-		(property "Reference" "MHole"
+		(property "Reference" "MH1"
 			(at 0 -2.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1833,6 +1901,30 @@
 				)
 			)
 		)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a9429ca9-6436-4445-bfcf-38e9bc462391")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "086ae411-71e3-4d33-90f6-e83a6ad99aca")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -1883,7 +1975,7 @@
 		(at 124.45 81.65)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID1"
 			(at 0 -1.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1940,7 +2032,31 @@
 				)
 			)
 		)
-		(attr smd exclude_from_bom)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "15c2fc41-c7a6-401e-a9de-99beb641d5a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1479aacd-85a3-4e06-bf9b-4ca2968523ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd board_only exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -2003,7 +2119,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "e3caad16-379b-4cd8-846c-8bbc1c698ed6")
@@ -2075,10 +2191,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_XBEE_RST1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "06ce864c-3325-426c-a1a4-ff1d5346c4b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:88"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a77d2478-b7ca-44b7-85fd-2ad914d5ef1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/79c25c44-b34d-4098-991f-2be744238e3f")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/591eb219-fbab-5882-acba-01700ec7b134")
 		(units
 			(unit
 				(name "A")
@@ -2189,7 +2327,7 @@
 				)
 			)
 		)
-		(property "Value" "SK6812MINI-E-012 | SK6812MINI-E | OPSCO Optoelectronics | SMD 3.2x2.8mm"
+		(property "Value" "SK6812MINI-E-012"
 			(at 0 2.54 0)
 			(layer "F.Fab")
 			(uuid "8cbb4024-e3fe-4e73-bd0a-030cf07689f0")
@@ -2261,10 +2399,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "D_RGB1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1dfa65d4-4165-48dc-b1db-220f178de489")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:53"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d5b36310-0a36-4904-9692-3d9900393fe1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*")
-		(path "/b63260e5-0a73-448f-8e04-69b17654f975/b1eb514b-760a-4f8e-8730-43261e861e9d")
-		(sheetname "/RGB_LED/")
-		(sheetfile "rgb_led.kicad_sch")
+		(path "/bd4f3aec-a01f-5d44-abab-425197726883")
 		(units
 			(unit
 				(name "A")
@@ -2422,7 +2582,6 @@
 			(size 1.34 0.68)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(D_RGB1-DOUT-Pad4)")
 			(pinfunction "DOUT_4")
 			(pintype "output+no_connect")
 			(uuid "8ed66150-4072-49df-8941-3c4f50257844")
@@ -2458,7 +2617,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "d37389e4-324a-4424-94fd-80d4e7338287")
@@ -2530,10 +2689,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_XBEE_RC1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3878aff8-5996-4433-95ed-546936ff0612")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:45"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "02a85361-f864-43c2-be51-c2d9528e3c91")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/613acf23-f312-4d9b-a000-03bd3172181c")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/05e80aef-ecbd-5c67-a372-a151c62da85a")
 		(units
 			(unit
 				(name "A")
@@ -2644,7 +2825,7 @@
 				)
 			)
 		)
-		(property "Value" "6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm"
+		(property "Value" "6x6x5mm SMD Tactile"
 			(at 0 3.81 0)
 			(layer "F.Fab")
 			(uuid "44ec8bed-c7b5-45f2-b41c-2d2176dacc86")
@@ -2720,9 +2901,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/d5d2b8ef-9b91-40bc-8a83-dc42e718d01e")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_MACRO6"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0f96a01c-8b6c-440a-9f5f-ea1fb83d37e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:95"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "84209b90-c790-4aa8-bcff-5c1aa043a1b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/16f91e6c-6feb-5aff-8a84-01f3788d9c93")
 		(units
 			(unit
 				(name "A")
@@ -3146,7 +3349,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 0.99 90)
 			(layer "F.Fab")
 			(uuid "c0e36c99-eec4-4d69-8623-eaca3a7ab10d")
@@ -3218,10 +3421,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_RGB1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bf7553c7-653a-4165-b1b9-b1d8184c41d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:39"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "189cccad-ab07-4a80-930c-934b63689f4b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/b63260e5-0a73-448f-8e04-69b17654f975/058dae3c-71f8-4770-bde1-ac5065d812d4")
-		(sheetname "/RGB_LED/")
-		(sheetfile "rgb_led.kicad_sch")
+		(path "/c7e1bda1-ed35-5204-8b31-f01af05098a9")
 		(units
 			(unit
 				(name "A")
@@ -3332,7 +3557,7 @@
 				)
 			)
 		)
-		(property "Value" "6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm"
+		(property "Value" "6x6x5mm SMD Tactile"
 			(at 0 3.81 0)
 			(layer "F.Fab")
 			(uuid "c3f062d5-2b2e-47f0-a0fb-e0b804a99438")
@@ -3408,9 +3633,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/654ec48d-32a9-4a3e-945b-458def9b1096")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_MACRO3"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4b0c3edb-c0d0-41c5-9a29-b9edba14a428")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:92"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "024ba8d0-d11f-4ca0-96dd-0a3a3e6b8ff1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/b5434b1b-0e7c-526f-b907-5e4fe2230bf0")
 		(units
 			(unit
 				(name "A")
@@ -3834,7 +4081,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "ab47295e-eed6-46e2-a914-38cbe237c70b")
@@ -3906,10 +4153,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_XBEE_VCC1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e4482310-f55b-40ef-b1c8-745943129edb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:46"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1bcca146-d0b0-45cc-965f-7254560444bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/b45bb8fa-01ed-46a2-bd59-26d5a9e49ce3")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/fb0a33f0-faf4-5e96-94f3-ba9c672e6e91")
 		(units
 			(unit
 				(name "A")
@@ -4020,7 +4289,7 @@
 				)
 			)
 		)
-		(property "Value" "0402WGF1000TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100Ω"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "f480f0a2-877c-4abd-a1e2-7ff8e0267697")
@@ -4092,10 +4361,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_XBEE_RC1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e354bbb1-3958-4f66-8db7-4e368eeaa24b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:87"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "22018f1c-7dc6-493c-a966-8136e00623bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/8b0ffb49-aaf8-4410-a28e-96d86ab76b15")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/3c583038-4a4b-57b6-ab63-07f4e425d6e5")
 		(units
 			(unit
 				(name "A")
@@ -4206,7 +4497,7 @@
 				)
 			)
 		)
-		(property "Value" "RC0402FR-0727RL | Yageo | 0402"
+		(property "Value" "27Ω"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "bc907fea-ac95-40e4-adcf-f0d7a4eec003")
@@ -4278,10 +4569,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_USB_DM1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "23c0146c-449e-42eb-a69b-ff67b092eebc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:81"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "20ba04e5-c96b-417f-9be7-e026eeaa5e10")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/fca9e791-fa16-4da6-9b2b-efa47dc2e543")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/c96e0117-7853-5f35-986f-299234d32874")
 		(units
 			(unit
 				(name "A")
@@ -4392,7 +4705,7 @@
 				)
 			)
 		)
-		(property "Value" "SKRTLAE010 | Alps Alpine | SMD tactile horizontal"
+		(property "Value" "SKRTLAE010"
 			(at 0 2.9 0)
 			(layer "F.Fab")
 			(uuid "ac6207ec-6214-4df0-9a87-c2926e7703c8")
@@ -4468,9 +4781,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/5b0f3f99-fc73-4779-a127-650a2219c37a")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_TRIG_DIG1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "97cc29e5-6001-4e10-8aff-f7204753c9f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:99"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8e478034-2617-4854-8cef-97acd7ebe610")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/b736fa96-be32-521f-96f3-9a841742818f")
 		(units
 			(unit
 				(name "A")
@@ -4819,7 +5154,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "af0ab304-1d9a-4028-a879-5ada59a3565d")
@@ -4891,10 +5226,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_EN_PU1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3a1e9555-957d-443c-b9c5-791e5161f48a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:68"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "986970b5-8d0c-4052-8c69-707b4ea6dda8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/7351746e-35f8-473e-8576-3f0f6e81aa72")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/5ff91a3f-185a-5324-9e45-da761fe0d3a7")
 		(units
 			(unit
 				(name "A")
@@ -5005,7 +5362,7 @@
 				)
 			)
 		)
-		(property "Value" "ESP32-S3-WROOM-1-N8 | Espressif Systems | SMD module 18x25.5mm"
+		(property "Value" "ESP32-S3-WROOM-1-N8"
 			(at 0 12 0)
 			(layer "F.Fab")
 			(uuid "71ea24e4-b2e4-4f6d-b1c7-34524d2b0db3")
@@ -5077,9 +5434,43 @@
 				)
 			)
 		)
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/58c65d05-a535-4fa9-a9f1-96c598ec89d5")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(property "Stackup Path" "U_MCU1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6b1e0a92-7a0e-48ae-af3b-c34d8060d290")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:106"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d6e5a91a-8cc8-45d7-af65-5c2510bbdfb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "356-ESP32S3WROOM1N8"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bcf4e653-9b93-42cd-80ba-6cbfadf72356")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/0466cd2a-b9be-59f2-b3ed-6d30cbef7aef")
 		(units
 			(unit
 				(name "A")
@@ -5424,7 +5815,6 @@
 			(at -6.985 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "unconnected-(U_MCU1-GPIO3{slash}TOUCH3{slash}ADC1_CH2-Pad15)")
 			(pinfunction "GPIO3/TOUCH3/ADC1_CH2_15")
 			(pintype "bidirectional+no_connect")
 			(uuid "6fd476fb-f8b3-4873-b52b-bdc15210c993")
@@ -5523,7 +5913,6 @@
 			(at 6.985 9.5 90)
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "unconnected-(U_MCU1-GPIO45-Pad26)")
 			(pinfunction "GPIO45_26")
 			(pintype "bidirectional+no_connect")
 			(uuid "b48ff861-b014-46e2-82ee-4c21943b7490")
@@ -5815,7 +6204,7 @@
 				)
 			)
 		)
-		(property "Value" "SKRTLAE010 | Alps Alpine | SMD tactile horizontal"
+		(property "Value" "SKRTLAE010"
 			(at 0 2.9 90)
 			(layer "F.Fab")
 			(uuid "89971725-b9be-447b-9d01-fa10211798e4")
@@ -5891,9 +6280,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/8d21e470-a498-4843-a34f-0b863a325fee")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_THR_UP1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b38562c9-7b6d-44ef-80f7-a9e44f390252")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:98"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a54a0bb3-c7c2-4a30-a7f9-381577eed225")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/185f773c-d84d-564d-a482-8ab745864578")
 		(units
 			(unit
 				(name "A")
@@ -6242,7 +6653,7 @@
 				)
 			)
 		)
-		(property "Value" "JST-SH_4Pin_OLED | SM04B-SRSS-TB(LF)(SN) | JST | SMD horizontal 1.00mm 4-pin"
+		(property "Value" "Qwiic connector"
 			(at 0 3.98 0)
 			(layer "F.Fab")
 			(uuid "8d30e11e-5d53-4f51-93e6-d1ae7878ba6f")
@@ -6314,9 +6725,31 @@
 				)
 			)
 		)
-		(path "/ab30dd66-bbd7-4b32-bf8e-8b7d2bf83841/0f7e36a8-dd79-4b5f-9bed-45f566230b1c")
-		(sheetname "/OLED/")
-		(sheetfile "oled.kicad_sch")
+		(property "Stackup Path" "U_OLED1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "edd50709-92fa-42d6-8191-2d757fe8aa90")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:107"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c005a554-d664-4485-860d-d0ff988fd68d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/873c651e-8375-5f6a-839c-0927d0e7d3c1")
 		(units
 			(unit
 				(name "A")
@@ -6701,7 +7134,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1kΩ | 0402WGF5101TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "5.1kΩ"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "8b0626de-cc65-496e-9d52-18a867c5e8db")
@@ -6773,10 +7206,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_CC2"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "79251760-58e6-4231-8920-4ae145aea970")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:67"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "10132a5e-3328-4bc5-8eac-60ab122be947")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a79dce81-618b-4a1c-ac71-81a6b4c28e48/b6f2ee81-99cc-4bad-a436-08803be51bf6")
-		(sheetname "/USB_C/")
-		(sheetfile "usb_c.kicad_sch")
+		(path "/d76e910c-dbb9-5852-9273-faf8c594840e")
 		(units
 			(unit
 				(name "A")
@@ -6887,7 +7342,7 @@
 				)
 			)
 		)
-		(property "Value" "10µF | CL10A106KP8NNNC | Samsung Electro-Mechanics | 0603"
+		(property "Value" "10µF"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "755771db-97a2-4f83-81b4-ded99cc7d2a9")
@@ -6959,10 +7414,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_XBEE_VCC4"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4c9c3482-e7ce-49fe-a32a-420d3041d156")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:49"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "65ab7a50-185e-4bb6-a9ff-88e545953e43")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/3ee3875f-d93b-4212-88cc-b829c56fd6bb")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/337ade36-14e1-514f-9272-7e2b27205fd1")
 		(units
 			(unit
 				(name "A")
@@ -7061,7 +7538,7 @@
 		(at 148.5 86)
 		(descr "Mounting Hole 2mm, no annular, generated by kicad-footprint-generator mountinghole.py")
 		(tags "mountinghole")
-		(property "Reference" "MHole"
+		(property "Reference" "MH2"
 			(at 0 -2.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7115,6 +7592,30 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9c4ee9e3-0f43-481b-b5c8-5fccbb0b93bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "78e40228-aa19-4faf-bd5b-b64d80a1fd14")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7181,7 +7682,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "c3381d27-934b-4484-a096-c132580c9312")
@@ -7253,10 +7754,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_OLED_2"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e2a8b331-9f3d-4cef-a0fb-d0d654d8ef67")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:38"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bbf8fc70-0f5e-42fd-b80b-8c261686142e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/ab30dd66-bbd7-4b32-bf8e-8b7d2bf83841/4a88fd15-47d0-4d8b-8d0b-d1191c4074d0")
-		(sheetname "/OLED/")
-		(sheetfile "oled.kicad_sch")
+		(path "/2b27245f-94c1-541b-bbeb-0dca2eb4c3cc")
 		(units
 			(unit
 				(name "A")
@@ -7367,7 +7890,7 @@
 				)
 			)
 		)
-		(property "Value" "Panasonic_EVQP2 | EVQP2T02M | Panasonic | SMD tactile 2.1mm"
+		(property "Value" "Panasonic_EVQP2"
 			(at 0 3 90)
 			(layer "F.Fab")
 			(uuid "4a77b6cc-bcb9-4dfd-bdfe-6def339f7925")
@@ -7443,9 +7966,31 @@
 				)
 			)
 		)
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/ca79a6b4-22d4-4fcd-a122-a1a80bce2727")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(property "Stackup Path" "SW_BOOT1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ecbc9bfe-3662-4779-a7f3-9382672eeec7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:89"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "230abbc9-3ded-44c6-a421-a14cacadc9dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/04731770-7be7-5c5c-9ac0-967af43661c6")
 		(units
 			(unit
 				(name "A")
@@ -7746,7 +8291,7 @@
 		(at 122.5 156.5)
 		(descr "Mounting Hole 2mm, no annular, generated by kicad-footprint-generator mountinghole.py")
 		(tags "mountinghole")
-		(property "Reference" "MHole"
+		(property "Reference" "MH3"
 			(at 0 -2.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7800,6 +8345,30 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e33d1109-c9a6-4429-abac-2064f7de70d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "df1dcb46-959a-43ae-b7d4-7730a15e5a31")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7866,7 +8435,7 @@
 				)
 			)
 		)
-		(property "Value" "SKRTLAE010 | Alps Alpine | SMD tactile horizontal"
+		(property "Value" "SKRTLAE010"
 			(at 0 2.9 90)
 			(layer "F.Fab")
 			(uuid "775d788b-06dd-4e85-9d91-0cda371edaca")
@@ -7942,9 +8511,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/5b33a8d0-f028-4bba-bfb2-1b791e602dea")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_VOL_DN1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7fe05f01-a64f-41ab-9e05-7dff777fb00b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:100"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "80ca1ded-7d4e-4f2c-8e7d-b22beeb1b7e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/4539b877-aae0-52b4-b5c9-052366fb6cfb")
 		(units
 			(unit
 				(name "A")
@@ -8293,7 +8884,7 @@
 				)
 			)
 		)
-		(property "Value" "6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm"
+		(property "Value" "6x6x5mm SMD Tactile"
 			(at 0 3.81 0)
 			(layer "F.Fab")
 			(uuid "98a911b5-e738-4941-bcbd-56cecc477d90")
@@ -8369,9 +8960,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/9123d977-fece-4d0d-b837-55e0c7a6f792")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_MACRO4"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "074c4f93-60dc-4998-9b23-63933542003e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:93"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "144d396d-e0d0-4833-9d31-795d585e89a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/8dd0b2e4-09c6-5c9e-9b86-debff4ee235f")
 		(units
 			(unit
 				(name "A")
@@ -8795,7 +9408,7 @@
 				)
 			)
 		)
-		(property "Value" "USB-C | TYPE-C-31-M-12 | Hroparts Elec | USB-C receptacle"
+		(property "Value" "USB-C"
 			(at 0 5.1 0)
 			(layer "F.Fab")
 			(uuid "3b144a03-9acd-44c7-a6b0-4af1ab0405cf")
@@ -8871,10 +9484,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "J_USB1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "280c39df-fc4f-4b09-8b98-c71741233886")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:59"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a45b9f06-d9e8-4118-aa28-fbe60ae22463")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "USB*C*Receptacle*")
-		(path "/a79dce81-618b-4a1c-ac71-81a6b4c28e48/5f2d506b-f47f-4899-964f-6cb1e8f91ed5")
-		(sheetname "/USB_C/")
-		(sheetfile "usb_c.kicad_sch")
+		(path "/c61937e0-3a64-5c16-999a-5ea7bf28ee50")
 		(units
 			(unit
 				(name "A")
@@ -9095,7 +9730,6 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(J_USB1-SBU1-PadA8)")
 			(pinfunction "SBU1_A8")
 			(pintype "bidirectional+no_connect")
 			(uuid "1b3c7435-3305-4e82-8804-46e85899f64d")
@@ -9175,7 +9809,6 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(J_USB1-SBU2-PadB8)")
 			(pinfunction "SBU2_B8")
 			(pintype "bidirectional+no_connect")
 			(uuid "6b1763be-8e48-4f1b-93e1-45c28cf7b9a8")
@@ -9279,7 +9912,7 @@
 				)
 			)
 		)
-		(property "Value" "1µF | CL10A105KB8NNNC | Samsung Electro-Mechanics | 0603"
+		(property "Value" "1µF"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "491e3985-3973-48c7-bf0d-62b02f447d3b")
@@ -9351,10 +9984,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_XBEE_VCC2"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b1ba39a5-91b1-4c52-b794-b5febc08d545")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:47"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ffbc9389-ed66-445d-b9a7-93737a36c561")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/308ce506-7bac-49cc-9094-238d9b7bf59c")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/f97c7198-68b8-5564-8f00-6b81b8a6ed9c")
 		(units
 			(unit
 				(name "A")
@@ -9504,9 +10159,31 @@
 				)
 			)
 		)
-		(path "/346238e1-b4e6-4959-a557-1b480b53e730/09d203d2-9c88-47ce-be04-6aa98f53257d")
-		(sheetname "/Thumbstick/")
-		(sheetfile "thumbstick.kicad_sch")
+		(property "Stackup Path" "J_STICK1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cd2d78f8-c473-4bd3-9444-e35a9cdd49bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:58"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dad988b2-e267-438f-86eb-e67f11f7164d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/43319c6c-a25e-5ed1-b08a-2fd013ecdd04")
 		(units
 			(unit
 				(name "A")
@@ -9732,7 +10409,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "f62e800f-3123-4d22-924e-6d228b2b1f11")
@@ -9804,10 +10481,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_DBNC1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a10ecf43-b15c-44a4-885b-6a85816e344f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:34"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "36b70cde-c989-4cd1-a0a2-74c2aae59b99")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/56dacbdf-5a55-4000-bc13-98d9e887861c")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/bf4e46ef-a3ac-5037-b9de-92e8d9bdac53")
 		(units
 			(unit
 				(name "A")
@@ -9918,7 +10617,7 @@
 				)
 			)
 		)
-		(property "Value" "0402WGF4700TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "470Ω"
 			(at 0 1 90)
 			(layer "F.Fab")
 			(uuid "ae970078-388a-4ae9-a4f0-de4b2bf6cdbe")
@@ -9990,10 +10689,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_RGB1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0e9e0302-6113-4ae2-9a6f-e962a0a1314d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:77"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5990c844-a527-492d-a59b-78e49f587a30")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/b63260e5-0a73-448f-8e04-69b17654f975/3c509c77-5ab6-4466-9c4f-7848d24f8bd7")
-		(sheetname "/RGB_LED/")
-		(sheetfile "rgb_led.kicad_sch")
+		(path "/010369d1-2b26-56f2-9bd6-dd50dfb4983d")
 		(units
 			(unit
 				(name "A")
@@ -10104,7 +10825,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1kΩ | 0402WGF5101TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "5.1kΩ"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "073dee7c-4415-4a5d-90a5-95dd74494753")
@@ -10176,10 +10897,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_CC1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "619ef3d5-45d7-4c73-a5e0-23ba0e944c3c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:66"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "66337094-c578-49a4-a89f-87fb26533af6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a79dce81-618b-4a1c-ac71-81a6b4c28e48/ae48c76e-35fd-457d-98be-93c7dbb5bdaa")
-		(sheetname "/USB_C/")
-		(sheetfile "usb_c.kicad_sch")
+		(path "/ed5d7f5c-8fa0-5dc7-9d3e-fe8638f144ed")
 		(units
 			(unit
 				(name "A")
@@ -10290,7 +11033,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "47e8f512-7114-4085-b25d-44a4a9835374")
@@ -10362,10 +11105,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_3V3_2"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "063a48ed-2a44-4cf7-90dd-b760708edd22")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:26"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b0014fce-7c4a-4267-b2dc-e5a823ee9019")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/f1bb2709-199e-4458-bfa5-64efd062cb65")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/008fd044-38d8-5b0c-a9aa-e2799ecdf39b")
 		(units
 			(unit
 				(name "A")
@@ -10464,7 +11229,7 @@
 		(at 151.3 127.3)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID2"
 			(at 0 -1.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -10521,7 +11286,31 @@
 				)
 			)
 		)
-		(attr smd exclude_from_bom)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "da078976-2bd1-4a21-8c6f-3e533035e276")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bc69f101-3139-479c-8f7e-8aade70e547f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd board_only exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -10584,7 +11373,7 @@
 				)
 			)
 		)
-		(property "Value" "10µF | CL10A106KP8NNNC | Samsung Electro-Mechanics | 0603"
+		(property "Value" "10µF"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "0c37499e-eeea-411d-837b-b1b106396141")
@@ -10656,10 +11445,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_3V3_1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "073aac27-27c6-47bb-a3ba-7fad83cb148b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:25"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1057e9d5-e6d1-4be5-b02e-25d32c274185")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/58a053e4-37d1-4518-8357-3bb6e06cc853")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/b4d4419c-0878-52d2-974a-2ccc35b2ca95")
 		(units
 			(unit
 				(name "A")
@@ -10771,7 +11582,7 @@
 				)
 			)
 		)
-		(property "Value" "200kΩ | 0402WGF2003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "200kΩ"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "da3007ab-1c39-4b82-9e4d-63c8490b728b")
@@ -10843,10 +11654,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_VSYS1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2e98c534-3a48-4114-80b8-f694da45a663")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:84"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bd9ed807-d5c8-4d99-841e-f600d0fb2dd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/82471ff6-9694-46e5-b2a2-c6485a9d3f24")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/3a5f22cb-80f5-5db2-96cc-fadabb0102ec")
 		(units
 			(unit
 				(name "A")
@@ -10957,7 +11790,7 @@
 				)
 			)
 		)
-		(property "Value" "RC0402FR-0727RL | Yageo | 0402"
+		(property "Value" "27Ω"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "3bda70ce-1987-4cbd-89cc-582b2a33dc1e")
@@ -11029,10 +11862,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_USB_DP1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b8f31a76-a220-4d08-ad57-29398eb62d2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:82"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "609557c4-6cfc-4222-8b56-624ca0bf6193")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/e27fea40-1f0c-424d-a232-c78e3fda69ce")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/5ae28961-4dde-5c49-9b7d-1813cc7efa56")
 		(units
 			(unit
 				(name "A")
@@ -11143,7 +11998,7 @@
 				)
 			)
 		)
-		(property "Value" "SKRTLAE010 | Alps Alpine | SMD tactile horizontal"
+		(property "Value" "SKRTLAE010"
 			(at 0 2.9 90)
 			(layer "F.Fab")
 			(uuid "d385d2c5-fb88-4264-8a25-cbba110dc50f")
@@ -11219,9 +12074,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/af15d7b2-62da-486d-8e9d-f037e42f2a35")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_THR_DN1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "abbc8d0e-43b8-4837-a421-65f9c773f19f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:97"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a984006b-1baf-44bc-a64e-8ba878e32d0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/d8be4626-cc79-54d5-b968-a32cfe50ae76")
 		(units
 			(unit
 				(name "A")
@@ -11570,7 +12447,7 @@
 				)
 			)
 		)
-		(property "Value" "47pF | 0402CG470J500NT | FH (Guangdong Fenghua Advanced Tech) | 0402"
+		(property "Value" "47pF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "93b1ab98-97f3-47a0-8a51-cff446f4bf23")
@@ -11642,10 +12519,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_XBEE_VCC3"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "11db2505-135b-49f1-856d-cda0b59a7027")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:48"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a7430ed0-cfc4-4ea8-9aff-dd17fe14059a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/16d28400-802f-4e1d-ac3e-efc50f1e9a5f")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/0ebb8e2d-29c0-50cf-b260-8b44c9e9d994")
 		(units
 			(unit
 				(name "A")
@@ -11756,7 +12655,7 @@
 				)
 			)
 		)
-		(property "Value" "SKRTLAE010 | Alps Alpine | SMD tactile horizontal"
+		(property "Value" "SKRTLAE010"
 			(at 0 2.9 90)
 			(layer "F.Fab")
 			(uuid "9999d58e-01f0-43e2-b018-b7e50a4c1924")
@@ -11832,9 +12731,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/9fd4acb3-8225-4197-a1ff-53d1e0cde43d")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_VOL_UP1"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e59e479e-a052-447e-817a-85437be2a307")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:101"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "768d8ced-bdbf-4348-9245-5ac390719e45")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/16c18574-76f3-5208-aa75-7f5df01a9092")
 		(units
 			(unit
 				(name "A")
@@ -12183,7 +13104,7 @@
 				)
 			)
 		)
-		(property "Value" "10µF | CL21A106KAYNNNE | Samsung Electro-Mechanics | 0805"
+		(property "Value" "10µF"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "dc4e8252-c2ea-4f27-b07f-6c2c82c5d5db")
@@ -12255,10 +13176,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_OLED_1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "34a0f69b-6ddf-4d15-a9b4-09ea912ee745")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:37"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5d00f16d-d0ba-4622-934a-92aed7c0f34e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/ab30dd66-bbd7-4b32-bf8e-8b7d2bf83841/1e378988-9c9d-4578-ac45-87e48040cbb3")
-		(sheetname "/OLED/")
-		(sheetfile "oled.kicad_sch")
+		(path "/722d9e65-c2cb-5466-b845-abde86ab0018")
 		(units
 			(unit
 				(name "A")
@@ -12357,7 +13300,7 @@
 		(at 152.5 156.5)
 		(descr "Mounting Hole 2mm, no annular, generated by kicad-footprint-generator mountinghole.py")
 		(tags "mountinghole")
-		(property "Reference" "MHole"
+		(property "Reference" "MH4"
 			(at 0 -2.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -12411,6 +13354,30 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bf8e0aae-6187-472d-8978-d78591c0f9eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "67896675-3338-4999-8ee8-b0641d2c3e3d")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -12477,7 +13444,7 @@
 				)
 			)
 		)
-		(property "Value" "6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm"
+		(property "Value" "6x6x5mm SMD Tactile"
 			(at 1.3025 5.36 0)
 			(layer "F.Fab")
 			(uuid "8e28309c-058a-42a8-83f7-f178ac7c76b8")
@@ -12553,9 +13520,31 @@
 				)
 			)
 		)
-		(path "/55476086-945a-4e34-9a73-115b94d080dd/2685ee94-098f-4cd4-bf08-e3c489e0c792")
-		(sheetname "/Buttons_Direct/")
-		(sheetfile "buttons_direct.kicad_sch")
+		(property "Stackup Path" "SW_MACRO1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b6730094-11e4-4fa3-b37b-8d0970ffb2de")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:90"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "31d7b7a0-2ff7-4975-a43a-8c51e362c69e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/b32fcae7-ca03-5042-9884-8c396ebfce9a")
 		(units
 			(unit
 				(name "A")
@@ -12980,7 +13969,7 @@
 				)
 			)
 		)
-		(property "Value" "100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100kΩ"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "8f6a3e53-fe3b-43a8-b3d4-a2d7621f2e4c")
@@ -13052,10 +14041,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_VSYS2"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5273a233-f6d0-41bd-acab-632e700840b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:85"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c80f382d-f2fc-43fc-bfc9-fc9d1a75d374")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/ebe1e8f9-a3d9-440a-82eb-6a8d7ef07a16")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/d2b6c4ab-7ef9-5ded-a5d1-4d96c799220d")
 		(units
 			(unit
 				(name "A")
@@ -13154,7 +14165,7 @@
 		(at 147 150.1)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID3"
 			(at 0 -1.95 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13211,7 +14222,31 @@
 				)
 			)
 		)
-		(attr smd exclude_from_bom)
+		(property "Stackup Path" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9c55c140-173e-488e-8624-2a8dc1fd6cb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8d124e4c-51d4-464c-b041-84dfa3acb2a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd board_only exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -13274,7 +14309,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "17f1917a-08bf-4635-a55a-4234e60dbb88")
@@ -13346,10 +14381,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_STICK1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "db0bbcbb-dda4-46a4-bfcb-3bd91cfad66f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:40"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c17d318b-bedf-40df-b3aa-6698894ee393")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/346238e1-b4e6-4959-a557-1b480b53e730/2aa0c597-97d1-4200-b2d4-1232dfdb5ee7")
-		(sheetname "/Thumbstick/")
-		(sheetfile "thumbstick.kicad_sch")
+		(path "/fb3cfdf0-d4ab-53b3-829c-080b55a7d2db")
 		(units
 			(unit
 				(name "A")
@@ -13460,7 +14517,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "56c8f291-613a-4898-9312-954fe7700ecb")
@@ -13544,10 +14601,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_XBEE_ATTN_PU1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e146c059-8db9-4bdd-a80e-4c874c55b320")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:86"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fbcef089-7dd9-4c0e-a67c-4d1d565522ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/4f95850f-f8fc-4b0b-b598-e710af0bb56d/9535c349-ffaa-4655-81d6-86e39b3c7625")
-		(sheetname "/XBee/")
-		(sheetfile "xbee.kicad_sch")
+		(path "/ebaa792d-dbb1-5d88-8f5f-5e68dd258532")
 		(units
 			(unit
 				(name "A")
@@ -13658,7 +14737,7 @@
 				)
 			)
 		)
-		(property "Value" "SKRTLAE010 | Alps Alpine | SMD tactile horizontal"
+		(property "Value" "SKRTLAE010"
 			(at 0 2.9 0)
 			(layer "F.Fab")
 			(uuid "d3a62366-8d49-4eb2-889a-27d3572c1ca1")
@@ -13734,9 +14813,31 @@
 				)
 			)
 		)
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/678fbf20-a425-427e-8152-b8e6fcfa0ad4")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(property "Stackup Path" "SW_PWR1"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "21304237-a3cb-484a-80bd-731e228d23d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:96"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "95454ff1-83af-4510-820d-bc6c04190340")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/4e90d978-3383-59e4-993f-eb7d65535bca")
 		(units
 			(unit
 				(name "A")
@@ -14085,7 +15186,7 @@
 				)
 			)
 		)
-		(property "Value" "39pF | CC0402JRNPO9BN390 | Yageo | 0402"
+		(property "Value" "39pF"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(uuid "2afdb062-6895-4b36-a68f-814c2c9e003a")
@@ -14169,10 +15270,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "C_3V3_3"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f167294e-517d-43b1-b416-ad8e585e08e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:27"
+			(at -2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "07761bbe-883d-4e26-8240-5f3b0d335d1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/6f59b6b1-3b10-49f3-8199-58995b53a9a5")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/fd89b7d8-b5eb-5153-97f5-9cc4658cf3f1")
 		(units
 			(unit
 				(name "A")
@@ -14283,7 +15406,7 @@
 				)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "cc583e60-2a44-4941-ac9a-442fc869332b")
@@ -14355,10 +15478,32 @@
 				)
 			)
 		)
+		(property "Stackup Path" "R_BOOT_PU1"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f3d3e6c1-4bc9-4b68-9204-80b16a8d2ce6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:64"
+			(at 2 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5ff8f76a-e48e-468b-b6b8-9c08a8f10518")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/922c16de-95dc-489f-b852-c04e7b6a8402/63e0728d-b29e-46ec-aff5-5a00b9255a1b")
-		(sheetname "/MCU_Core/")
-		(sheetfile "mcu_core.kicad_sch")
+		(path "/458f2090-917f-58d0-aed4-6553732ff17f")
 		(units
 			(unit
 				(name "A")
@@ -14470,7 +15615,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "d998a7f1-e267-4bf5-8104-2bcd8cf3de43")
@@ -14548,10 +15693,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_BTN_PU1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "850b33eb-4787-4f11-bf95-e377645343f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:65"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b6d2bf93-ccee-4136-a8bd-a91ef2eb1114")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/997b7f20-f4d9-4652-8e33-fa3da61e2ec3")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/2c7802cf-9133-5dcc-a7ea-5198e1afda3a")
 		(units
 			(unit
 				(name "A")
@@ -14664,7 +15831,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10µF | CL21A106KAYNNNE | Samsung Electro-Mechanics | 0805"
+		(property "Value" "10µF"
 			(at 0 -1.68 0)
 			(layer "B.Fab")
 			(uuid "f6dd34e2-1a7e-4242-a613-075d419820ea")
@@ -14742,10 +15909,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_SYS_1"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "30080745-879b-4733-a974-11c9086c8a99")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:41"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5ec1c961-646b-438f-b18b-04ad86600ba0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/58d1a05f-e5a5-4161-964e-0909dbe1346a")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/2d079967-45b0-53cc-b8e7-a89bd1adba7c")
 		(units
 			(unit
 				(name "A")
@@ -14858,7 +16047,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "AO3401A | Alpha & Omega Semicon | SOT-23"
+		(property "Value" "AO3401A"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "9e0e1540-09ab-4133-9ff4-68ef5e0c24eb")
@@ -14936,9 +16125,31 @@
 				(justify mirror)
 			)
 		)
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/75931e41-38ee-43a1-a5f3-dea8cc4d6257")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(property "Stackup Path" "Q_PWR1"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "189f6a85-227d-46d0-8bf4-d30f4be77f05")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:63"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "56e949c9-6c1f-4a3a-bccb-c06f5fdd48be")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/c8c44570-d966-5be9-a180-1805e700f100")
 		(units
 			(unit
 				(name "A")
@@ -15275,7 +16486,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TPPESD5V0S1BA | TECH PUBLIC | SOD-323"
+		(property "Value" "TPPESD5V0S1BA"
 			(at 0.1 -1.9 90)
 			(layer "B.Fab")
 			(uuid "16dd9499-b725-41c2-a90f-331f759d4c8f")
@@ -15357,10 +16568,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "D_VBUS_TVS1"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c3aa34e1-1dd3-4ae2-8535-7da465d68c8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:57"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "52857c4b-4f34-41d4-b0fc-3b68c9db8137")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
-		(path "/a79dce81-618b-4a1c-ac71-81a6b4c28e48/eeee0f22-9067-4766-a470-bd794de301f6")
-		(sheetname "/USB_C/")
-		(sheetfile "usb_c.kicad_sch")
+		(path "/d8e46a03-3879-5a39-bb48-9d1385b626d1")
 		(units
 			(unit
 				(name "A")
@@ -15603,7 +16836,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "PH 2-pin battery RIGHT-ANGLE HORIZONTAL | S2B-PH-K(LF)(SN) | JST | THT right-angle horizontal 2.00mm"
+		(property "Value" "PH 2-pin battery RIGHT-ANGLE HORIZONTAL"
 			(at 1 -7.45 0)
 			(layer "B.Fab")
 			(uuid "be935d3d-a7c3-4924-b952-a22a8b8ff007")
@@ -15681,10 +16914,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "BT1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1010c61f-9614-4ac1-8df1-992564fb5f0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:24"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "870b9a2e-56e5-489c-83f3-8cf3d5fbf814")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
-		(path "/fad91b89-9661-46eb-b0af-354ad1315a11/a08b08fa-7165-4410-b1d5-feced682372e")
-		(sheetname "/Battery/")
-		(sheetfile "battery.kicad_sch")
+		(path "/aed37c81-d8c4-5797-a265-a006ed51b382")
 		(units
 			(unit
 				(name "A")
@@ -16073,7 +17328,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "5fddc59e-0e12-4b3d-8324-a8fe05ad54b4")
@@ -16151,10 +17406,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_VIN_2"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5c5bd414-4686-4652-9b01-28f7213a7ae1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:44"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9833576d-3be8-43a7-9af4-8b2b86fac03f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/9256a0aa-10ab-42e9-9338-121652242397")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/767a3c48-9a20-55ce-920a-cf805399b457")
 		(units
 			(unit
 				(name "A")
@@ -16267,7 +17544,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10µF | CL21A106KAYNNNE | Samsung Electro-Mechanics | 0805"
+		(property "Value" "10µF"
 			(at 0 -1.68 0)
 			(layer "B.Fab")
 			(uuid "3c976c53-c8a0-400e-8867-17538010d55e")
@@ -16345,10 +17622,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_VIN_1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2c974235-1d97-4cbb-85e1-fff6f355c1df")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:43"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "3442f931-428e-48a6-b4a9-020bc1f8d17d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/b2ff5583-4b77-4080-9c67-48e330475ab1")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/86103b52-000a-5cd5-a338-7553101cd180")
 		(units
 			(unit
 				(name "A")
@@ -16461,7 +17760,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "22µF | CL21A226MAQNNNE | Samsung Electro-Mechanics | 0805"
+		(property "Value" "22µF"
 			(at 0 -1.68 90)
 			(layer "B.Fab")
 			(uuid "d646dea2-8318-4a93-a757-bd305f7a8eda")
@@ -16539,10 +17838,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_BUCK_OUT1"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "6801ec0c-3ba1-48e4-b492-5ac547210be9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:33"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "7076765b-2e1d-4cfb-8ea5-3bce1ac1b429")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/396f8ead-8ebf-4157-91bc-b800fd136afb/d83bb9d4-787a-48e9-bcba-844a71d90eaf")
-		(sheetname "/Power_Buck/")
-		(sheetfile "power_buck.kicad_sch")
+		(path "/9c031725-c12c-5f56-9f8e-dce0669b7cb5")
 		(units
 			(unit
 				(name "A")
@@ -16655,7 +17976,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "QMA6100P | QST | LGA-12 2x2mm"
+		(property "Value" "QMA6100P"
 			(at 0 -1.6 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -16738,9 +18059,31 @@
 				(justify mirror)
 			)
 		)
-		(path "/9b8c09c7-1830-43d3-b2aa-0958e14b5b9b/84613346-2fae-482b-9476-4c8a61107a01")
-		(sheetname "/Accelerometer/")
-		(sheetfile "accelerometer.kicad_sch")
+		(property "Stackup Path" "U_ACCEL1"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "84d80eae-4bc5-4517-a5ad-a1bafa0a9b10")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:102"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d44318ac-c075-4340-8ff9-a5777bab4595")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/e7a5f908-b918-5911-ab2c-0522e588d81c")
 		(units
 			(unit
 				(name "A")
@@ -16831,7 +18174,6 @@
 			(at 0.25 -0.75)
 			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "unconnected-(U_ACCEL1-INT2-Pad6)")
 			(pinfunction "INT2_6")
 			(pintype "output+no_connect")
 			(uuid "06aca7ad-4208-4754-ad3b-91dcbf048954")
@@ -16840,7 +18182,6 @@
 			(at 0.75 -0.75)
 			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
-			(net "unconnected-(U_ACCEL1-NC-Pad7)")
 			(pinfunction "NC_7")
 			(pintype "no_connect")
 			(uuid "3b222d99-c0f0-47a8-8d96-6ec53a4895ac")
@@ -16922,7 +18263,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "BAT54W-7-F | Diodes Incorporated | SOT-323 (SC-70)"
+		(property "Value" "BAT54W-7-F"
 			(at 0 -1.8 90)
 			(layer "B.Fab")
 			(uuid "6eb00ac7-e6ed-4b2b-ad99-bb11b1b86550")
@@ -17013,10 +18354,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "D_INV_ISO1"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "0a7cb3dd-992d-43ef-acae-d8a5972961c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:50"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "94d9f201-91c5-4cf9-b637-12b293db0d08")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?323*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/41e6dcf5-7dc0-4dee-b65b-91ef6cdb0eec")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/7e9eba98-50a9-51e9-815e-35818fa1dec8")
 		(units
 			(unit
 				(name "A")
@@ -17286,7 +18649,6 @@
 			(size 0.925 0.45)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "unconnected-(D_INV_ISO1-NC-Pad2)")
 			(pinfunction "NC_2")
 			(pintype "no_connect")
 			(uuid "a58c93cc-9a3c-45f6-b4e1-2c483202254f")
@@ -17333,7 +18695,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148W | ST(Semtech) | SOD-123"
+		(property "Value" "1N4148W"
 			(at 0 -2.1 90)
 			(layer "B.Fab")
 			(uuid "8c6fe586-2d56-44ee-9cda-4c10b9ccc70a")
@@ -17443,10 +18805,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "D_OR1"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cc926398-656d-464c-88f0-ac6d6d7425ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:51"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "6c26a98b-c534-4376-8a0e-361649d36e90")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/e0802da6-6a2b-4e63-a5bd-b0c2b9ba395f")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/b496a53a-138c-51cf-af92-61108d5cc51d")
 		(units
 			(unit
 				(name "A")
@@ -17699,7 +19083,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100kΩ"
 			(at 0 -1.17 90)
 			(layer "B.Fab")
 			(uuid "190badc0-99f5-49cd-a801-6ac92a88ce63")
@@ -17790,10 +19174,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_PWR_EN_PD1"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b70a2881-d213-474f-a221-d15e5fed45c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "@stackup/passives.kdl:126"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a1525269-e758-4655-8b66-373e77e6ac77")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/ee701422-fa7c-4e0e-8d19-eb199b54ea3f")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/e49fe592-c225-51f5-816f-a451f2a1b535")
 		(units
 			(unit
 				(name "A")
@@ -17891,7 +19297,7 @@
 		(layer "B.Cu")
 		(uuid "43777110-603b-42ec-9145-81e8566f267d")
 		(at 133.9 138.3 180)
-		(property "Reference" "G***"
+		(property "Reference" "LOGO1"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -17939,6 +19345,30 @@
 					(size 1.27 1.27)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Stackup Path" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2e2b647b-0ef0-405f-96ca-b26b39294c31")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cc28b846-8730-4a9e-8ca1-bdc19f4b3a7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
@@ -18898,7 +20328,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10µF | CL21A106KAYNNNE | Samsung Electro-Mechanics | 0805"
+		(property "Value" "10µF"
 			(at 0 -1.68 0)
 			(layer "B.Fab")
 			(uuid "5c42abff-8230-4586-a353-c3d370f9b12a")
@@ -18976,10 +20406,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_BUCK_IN1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "7a91119b-5282-4cce-966d-768c9aac5324")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:32"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d12f8c26-3e7d-4139-8511-9ddbef7ac3d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/396f8ead-8ebf-4157-91bc-b800fd136afb/c13bf9f5-e357-4cba-aa74-e4ac58ce2c48")
-		(sheetname "/Power_Buck/")
-		(sheetfile "power_buck.kicad_sch")
+		(path "/d5366359-0189-584f-bdba-ca23d6aa7d16")
 		(units
 			(unit
 				(name "A")
@@ -19092,7 +20544,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "c6ee5121-2a7c-4dd9-9b93-9f86adb06fd3")
@@ -19183,10 +20635,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_LATCH_G1"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d40088a7-696e-4cb8-9e4e-358caae9be79")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:36"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "eb74007f-3c3a-48af-8af7-a6bf6dfc49ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/526a9667-117d-48b5-85bd-c2e58526ea56")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/cf12f253-3043-56a8-8f51-dfe19f05d9a6")
 		(units
 			(unit
 				(name "A")
@@ -19299,7 +20773,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 -1.16 0)
 			(layer "B.Fab")
 			(uuid "3681de8c-af85-421b-a828-5ca8c7b8781d")
@@ -19377,10 +20851,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_HALL1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "74297f41-0c5c-420b-aa0d-3fa45b4ef43e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:35"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c3dc2ed3-dbdf-4f89-a9ab-b0abdb45ab89")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/15cccc75-ae28-44d0-aa53-203a86ee0065/53b6c895-5e9c-438a-9eb4-6f57a8d867bf")
-		(sheetname "/Hall_Trigger/")
-		(sheetfile "hall_trigger.kicad_sch")
+		(path "/34d2069f-1d09-5018-886b-cadd460a6d38")
 		(units
 			(unit
 				(name "A")
@@ -19493,7 +20989,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "56f32c32-2f2e-4fa4-bf82-988c0559c245")
@@ -19584,10 +21080,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_INV_BASE1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cc65ba5f-c82c-49c0-8f48-e6ce6447039c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:72"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cd829df2-1809-4605-8e97-fe5a46839316")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/2caa64fa-135a-4aed-a7a1-adc3d721d949")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/5bda16f2-a631-5c56-a114-b6cbd6e7ef76")
 		(units
 			(unit
 				(name "A")
@@ -19700,7 +21218,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100kΩ"
 			(at 0 -1.17 90)
 			(layer "B.Fab")
 			(uuid "04e53094-b71f-4547-8231-cd68fab91622")
@@ -19791,10 +21309,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_INV_PU1"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "431c3e4e-0615-49cf-b04e-96e30476ef6f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:73"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f3c5b7fa-f94a-4fe9-9a13-913c8f0db7d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/136a26fe-d1d0-40cf-83b5-71e09a7fd90a")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/c43d3ce1-f612-5667-b24c-c0000a3c214d")
 		(units
 			(unit
 				(name "A")
@@ -19907,7 +21447,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "100kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "e65570ba-f7fe-4f0b-bda1-c7841679f1ac")
@@ -19985,10 +21525,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_GATE1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "441dd6f0-7dea-4144-92d9-561fcbb8fa40")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:71"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d19ba45c-f833-4638-b16f-88f4e5988d44")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/abe6acab-3d00-42d3-8f6c-f76bb188a50d")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/a46c3ee4-2395-5984-87c9-887cb6aee8dc")
 		(units
 			(unit
 				(name "A")
@@ -20101,7 +21663,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "AO3400A | Alpha & Omega Semicon | SOT-23"
+		(property "Value" "AO3400A"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "4b9234fe-8e61-4982-93b5-7898f69b1ba1")
@@ -20179,9 +21741,31 @@
 				(justify mirror)
 			)
 		)
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/f441407e-ea83-4b05-96c0-10d8ba004568")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(property "Stackup Path" "Q_LATCH1"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "7a3c7470-51d2-4a43-b762-aa2fa0c1235c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:62"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e9beecae-8406-4961-b49b-9bd491ea3c1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/cc512f44-50f7-5ebb-91d8-d42c32f5dee2")
 		(units
 			(unit
 				(name "A")
@@ -20518,7 +22102,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "100nF"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "51e5f2c8-7140-4978-af3a-5690f99018b2")
@@ -20596,10 +22180,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_SYS_2"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cbbb5024-eba7-432a-9f6c-ad412f43fb74")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:42"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "56705001-f4f7-44f0-8a76-bd986d316c30")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/36ebd234-cf56-454b-ac0e-6b12dc53dc96")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/e2c8fc08-1aa6-5675-9020-a7b835e59054")
 		(units
 			(unit
 				(name "A")
@@ -20699,7 +22305,7 @@
 		(at 150.4 105.2 180)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID4"
 			(at 0 1.95 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -20761,7 +22367,31 @@
 				(justify mirror)
 			)
 		)
-		(attr smd exclude_from_bom)
+		(property "Stackup Path" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "623f446e-8225-4589-b3d0-45385674e6f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9ece12fc-bbb6-4d8d-aa13-e48e6dc246c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd board_only exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -20811,7 +22441,7 @@
 		(layer "B.Cu")
 		(uuid "79f3e841-1602-49ca-83a2-17e700e030f9")
 		(at 146.5 142.8 180)
-		(property "Reference" "G***"
+		(property "Reference" "LOGO2"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -20859,6 +22489,30 @@
 					(size 1.27 1.27)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Stackup Path" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "cc189029-f2ce-459e-b1d3-43becc905d90")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1ca6895c-1c0e-429d-b9f5-663a2dc360ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
@@ -20991,7 +22645,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10µF | CL21A106KAYNNNE | Samsung Electro-Mechanics | 0805"
+		(property "Value" "10µF"
 			(at 0 -1.68 0)
 			(layer "B.Fab")
 			(uuid "749c8d9a-e32d-421f-bf57-c3ee34a4d812")
@@ -21069,10 +22723,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_BAT1"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "801866e9-25be-41b1-ade4-320126f18d7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:31"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "79058ded-645d-467b-8e52-e745eb240519")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/82938614-75e7-454b-abbc-5dc5a1f2bf70")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/53994c88-33fa-516a-9d64-2f0949cf1a73")
 		(units
 			(unit
 				(name "A")
@@ -21183,7 +22859,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "BQ25185DLHR | Texas Instruments | WSON-10 2.2x2.0mm"
+		(property "Value" "BQ25185DLHR"
 			(at 56.2 -43.635 0)
 			(layer "B.Fab")
 			(uuid "937d09f5-09df-4d6b-8572-16fb39cbd9a6")
@@ -21443,9 +23119,31 @@
 				(justify mirror)
 			)
 		)
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/693582e6-ab5d-4aea-b22c-72a3ffdaa8f8")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(property "Stackup Path" "U_CHG1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "942c6526-d2c5-4606-97b7-75f29077e200")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:104"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "10443bf1-9da8-4fbf-b274-0cdd37cabe12")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/b840e28f-4d8e-5da5-89df-017c48c36ef1")
 		(units
 			(unit
 				(name "A")
@@ -22089,6 +23787,7 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
+			(net "GND")
 			(uuid "a70408f9-f447-446f-ab4f-867071df5d38")
 		)
 		(pad "13" thru_hole circle
@@ -22097,6 +23796,7 @@
 			(drill 0.2)
 			(layers "*.Cu")
 			(remove_unused_layers no)
+			(net "GND")
 			(uuid "de4cb4e4-7bab-43fe-ba65-d765b737dbe8")
 		)
 		(embedded_fonts no)
@@ -22131,7 +23831,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "eae49a37-aea4-4eed-a407-7a7d70c52a2b")
@@ -22222,10 +23922,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_STAT2"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2fe23c34-108b-4a40-88df-b2e3ddbab452")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:79"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b6ec057f-dcb3-4f12-9fa4-5da68079988a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/f6e3a9c1-8d47-4b2e-9a5f-7c1e6d3b8a92")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/213051d8-6d7f-5a98-bf06-9f116b171331")
 		(units
 			(unit
 				(name "A")
@@ -22325,7 +24047,7 @@
 		(at 125.9 95.3 180)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID5"
 			(at 0 1.95 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -22387,7 +24109,31 @@
 				(justify mirror)
 			)
 		)
-		(attr smd exclude_from_bom)
+		(property "Stackup Path" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "24c0799e-d930-4a7f-96d8-8a875972c206")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "3340a4a9-ab1b-416e-a027-fad04d402b80")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd board_only exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -22452,7 +24198,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "DRV5055A2QLPGM | Texas Instruments | TO-92 THT"
+		(property "Value" "DRV5055A2QLPGM"
 			(at 1.27 -2.79 0)
 			(layer "B.Fab")
 			(uuid "4c670d9a-6814-4904-96d3-95f1a2fda210")
@@ -22520,10 +24266,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "U_HALL1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "ceabd61f-c359-46e9-bfeb-7a8aca8076bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:105"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "656279a3-4e2f-45d5-b332-a84730a8573f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO?92*")
-		(path "/15cccc75-ae28-44d0-aa53-203a86ee0065/481913e8-b25e-4f94-8825-53ef1c156f3e")
-		(sheetname "/Hall_Trigger/")
-		(sheetfile "hall_trigger.kicad_sch")
+		(path "/f8fef371-899c-529e-91f2-a2d656bd9706")
 		(units
 			(unit
 				(name "A")
@@ -22713,7 +24481,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1N4148W | ST(Semtech) | SOD-123"
+		(property "Value" "1N4148W"
 			(at 0 -2.1 90)
 			(layer "B.Fab")
 			(uuid "f8ddd6ba-73cb-425f-908a-ca279616d708")
@@ -22823,10 +24591,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "D_OR2"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1591b0bd-7415-4c4d-b8b6-15cc15a43616")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:52"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "127f9262-63f4-4df0-b885-57af9113918f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/95eda58f-32a5-4ede-9324-2a049e5ad218")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/ea971f8f-1025-580c-97c7-171cc66c8a28")
 		(units
 			(unit
 				(name "A")
@@ -23064,7 +24854,7 @@
 		(layer "B.Cu")
 		(uuid "9d267c25-cdf3-4271-ba57-016038d61e0a")
 		(at 147.2 155.8 180)
-		(property "Reference" "G***"
+		(property "Reference" "LOGO3"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -23112,6 +24902,30 @@
 					(size 1.27 1.27)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Stackup Path" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f16e7be7-953e-488e-b076-e08cfe558222")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a8c13f84-09a1-4a0d-b13e-54f6b7c15af1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
@@ -23303,7 +25117,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1MΩ | 0402WGF1004TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "1MΩ"
 			(at 0 -1.17 90)
 			(layer "B.Fab")
 			(uuid "144004f1-efc5-48c5-b085-980750e018e8")
@@ -23381,10 +25195,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_LATCH_G1"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "37ba0831-6e75-457e-bd89-6155e55bffb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:75"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f977c22e-19ee-408b-8c39-8abe64ba336f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/9c96cfde-2868-48be-90bf-61bf77521e9b")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(path "/69e3e4db-a3ee-5e94-9e3d-5b01833af909")
 		(units
 			(unit
 				(name "A")
@@ -23497,7 +25333,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "56.2kΩ | RC0402FR-0756K2L | Yageo | 0402"
+		(property "Value" "56.2kΩ"
 			(at 0 -1.17 90)
 			(layer "B.Fab")
 			(uuid "b55b50dc-dc46-4e31-93fe-2035e67495f2")
@@ -23575,10 +25411,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_FB2"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "88efd99b-935a-4ae5-bfe2-17dface683bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:70"
+			(at 2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "302c5a6d-e7eb-47cc-92a7-a0b453221a4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/396f8ead-8ebf-4157-91bc-b800fd136afb/fc611120-ee71-40b3-bd0b-dca43792d4ce")
-		(sheetname "/Power_Buck/")
-		(sheetfile "power_buck.kicad_sch")
+		(path "/31d3531d-3c70-537f-859f-5b6468e07c16")
 		(units
 			(unit
 				(name "A")
@@ -23691,7 +25549,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "RC0402FR-0718KL | Yageo | 0402"
+		(property "Value" "18kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "7e793424-fb67-4346-b4a3-298fb9739d26")
@@ -23769,10 +25627,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_VSET1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9dad4451-51f8-446f-87ff-437d8849c86d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:83"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "723c59b0-8588-4b69-a946-e825eddd2d13")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/31234faa-8264-4c54-bf2a-cf0b55adc1e2")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/b59483be-69ee-57e4-ae87-bfff111ed616")
 		(units
 			(unit
 				(name "A")
@@ -23885,7 +25765,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "1b38bcb2-b9f0-4354-bfc1-2e14c19c2f09")
@@ -23963,10 +25843,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_STAT1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1d3aadb7-20bf-4d44-8bec-4f505b958fba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:78"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "ff1ab658-35f9-492c-874b-ad98eb93b05a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/41c802be-d701-4695-887c-4ac7fcf87119")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/49093ee7-a404-5ac1-b4ee-14373f94d3cb")
 		(units
 			(unit
 				(name "A")
@@ -24079,7 +25981,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "AC0402FR-07604RL | Yageo | 0402"
+		(property "Value" "604Ω"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "f027cebe-49d5-49e6-a92f-4d7877f2f125")
@@ -24157,10 +26059,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_ISET1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e0499828-6650-443b-bf0f-547b948b76aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:74"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1983bfb0-9674-410c-8bbd-b464c2145847")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/b14239dd-6ad9-4a7f-a310-c8aac10bf2d3")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/2fe72eb7-3d6a-5c32-af62-a1e01e62a952")
 		(units
 			(unit
 				(name "A")
@@ -24260,7 +26184,7 @@
 		(at 122.8 75.7 180)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID6"
 			(at 0 1.95 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -24322,7 +26246,31 @@
 				(justify mirror)
 			)
 		)
-		(attr smd exclude_from_bom)
+		(property "Stackup Path" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f74d7b67-fc93-4274-806b-78a6f7807e58")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" ""
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1067baa1-1247-439a-b0a5-95d2089acc49")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd board_only exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -24387,7 +26335,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "RC0402FR-07255KL | Yageo | 0402"
+		(property "Value" "255kΩ"
 			(at 0 -1.17 90)
 			(layer "B.Fab")
 			(uuid "76f124bf-ddb5-4cf2-b403-33478361bf0f")
@@ -24465,10 +26413,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_FB1"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "6707385a-0a74-4cb9-9543-6d4884fee472")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:69"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "93ef101b-d7ab-44a2-8ef0-994b36a8d15f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/396f8ead-8ebf-4157-91bc-b800fd136afb/39671d9b-b85a-4162-a70f-afa72a93c101")
-		(sheetname "/Power_Buck/")
-		(sheetfile "power_buck.kicad_sch")
+		(path "/56d198ab-e2b1-526a-ada9-1e646d15ad03")
 		(units
 			(unit
 				(name "A")
@@ -24581,7 +26551,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100pF | 0402CG101J500NT | FH (Guangdong Fenghua Advanced Tech) | 0402"
+		(property "Value" "100pF"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "5e4bfd15-0e5e-446a-9500-b12d7882a36c")
@@ -24672,10 +26642,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_ACCEL_2"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "ec72b2a5-0fb1-48f5-aab0-01136ab0c6d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:29"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "7a0233e1-e9db-4a83-b6ef-34f9a25a47bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/9b8c09c7-1830-43d3-b2aa-0958e14b5b9b/ad34a68c-af13-47e0-8af7-356b780cdf8f")
-		(sheetname "/Accelerometer/")
-		(sheetfile "accelerometer.kicad_sch")
+		(path "/4c4dd1d5-b39d-50d0-88ac-1342ce19de1f")
 		(units
 			(unit
 				(name "A")
@@ -24788,7 +26780,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2.2nF | CL05B222KB5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "2.2nF"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "1976a3d7-bb88-4ba4-ac64-eee796f41df1")
@@ -24879,10 +26871,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_ACCEL_3"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "977b7a27-c823-43c1-9de7-0abde762dca6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:30"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "76dc5390-c0e9-4f6f-9265-1467d05325e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/9b8c09c7-1830-43d3-b2aa-0958e14b5b9b/ff92f6cb-5cc8-46c4-bda4-855b786f1afa")
-		(sheetname "/Accelerometer/")
-		(sheetfile "accelerometer.kicad_sch")
+		(path "/0e36610a-2a84-5e75-b4bb-4de3f7cb435e")
 		(units
 			(unit
 				(name "A")
@@ -24995,7 +27009,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TLV62569DBVR | Texas Instruments | SOT-23-5"
+		(property "Value" "TLV62569DBVR"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "dbf29a2f-dc38-4905-a157-c294851a716a")
@@ -25073,10 +27087,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "U_BUCK1"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "179288aa-34c9-454d-b544-4b635438b2bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:103"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "22e59454-0b5c-4792-a7ae-969b2cdbdeac")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
-		(path "/396f8ead-8ebf-4157-91bc-b800fd136afb/a24067f6-ecd4-470a-8208-338e913b12af")
-		(sheetname "/Power_Buck/")
-		(sheetfile "power_buck.kicad_sch")
+		(path "/01d79e8b-400a-500d-9fe6-5614a79d1279")
 		(units
 			(unit
 				(name "A")
@@ -25433,7 +27469,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2.2µH | SRN4018-2R2M | Bourns | 4.0x4.0mm SMD"
+		(property "Value" "2.2µH"
 			(at 0 3.1 0)
 			(layer "B.Fab")
 			(uuid "c280e13b-9ede-4a39-8680-9ad1df30b799")
@@ -25515,10 +27551,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "L_BUCK1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d138fa84-f404-44d2-8323-a9765612740a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:60"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "09d6870f-54ed-4e4a-a59c-7ba124534793")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
-		(path "/396f8ead-8ebf-4157-91bc-b800fd136afb/9850f9a3-71d9-42fe-86e8-5a99290b33a9")
-		(sheetname "/Power_Buck/")
-		(sheetfile "power_buck.kicad_sch")
+		(path "/6ec4aba0-5ea6-53c2-98e5-0b6074e59f4d")
 		(units
 			(unit
 				(name "A")
@@ -25749,7 +27807,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10nF | CL05B103KB5NNNC | Samsung Electro-Mechanics | 0402"
+		(property "Value" "10nF"
 			(at 0 -1.16 90)
 			(layer "B.Fab")
 			(uuid "6528280e-5499-4a25-9160-f7faf4438923")
@@ -25840,10 +27898,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "C_ACCEL_1"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c6d9c3f3-7ee0-4a85-aee3-86fd8b15c219")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:28"
+			(at -2 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "19a0cdc7-2c2a-4f97-992e-68f53dbcb3d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
-		(path "/9b8c09c7-1830-43d3-b2aa-0958e14b5b9b/7c163439-26eb-4399-8140-658ff46610f4")
-		(sheetname "/Accelerometer/")
-		(sheetfile "accelerometer.kicad_sch")
+		(path "/7c594591-df08-51f4-8f16-5cee54c9a6fe")
 		(units
 			(unit
 				(name "A")
@@ -25956,7 +28036,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "MMBT3904(RANGE:100-300) | Jiangsu Changjing Electronics Technology Co Ltd | SOT-23"
+		(property "Value" "MMBT3904(RANGE:100-300)"
 			(at 0 -2.4 0)
 			(layer "B.Fab")
 			(uuid "bac86b8b-7b04-4239-9403-9647a76fd051")
@@ -26075,9 +28155,31 @@
 				(justify mirror)
 			)
 		)
-		(path "/081a4841-1e21-4908-a8a8-37f54f8809f6/e1640085-7ea1-4c90-8cc9-a66c02caa3ea")
-		(sheetname "/Power_Control/")
-		(sheetfile "power_control.kicad_sch")
+		(property "Stackup Path" "Q_INV1"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f6ac188b-3cdd-44b5-9068-5fbf46a3355d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:61"
+			(at 0 2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e71eaa78-7d76-437f-8f53-95529a8014f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/7cfae235-1962-5214-8691-031425263761")
 		(units
 			(unit
 				(name "A")
@@ -26414,7 +28516,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402"
+		(property "Value" "10kΩ"
 			(at 0 -1.17 0)
 			(layer "B.Fab")
 			(uuid "38311a83-d968-43a5-b963-3f4b048ffe57")
@@ -26492,10 +28594,32 @@
 				(justify mirror)
 			)
 		)
+		(property "Stackup Path" "R_TS1"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d88ed2b2-a397-4355-b282-27f49ec99d2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Stackup Source" "PCB/stackup/board.kdl:80"
+			(at 0 -2 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "be24c03a-6f38-4cf0-9939-c074181dbb1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
-		(path "/a161eba2-5cf9-4e54-b23a-cab3e9f70ed0/fef2251f-f3d4-4641-a0c4-f9de9d19711a")
-		(sheetname "/Power_Charger/")
-		(sheetfile "power_charger.kicad_sch")
+		(path "/f8467960-077e-5dfa-ad5f-583d827e1496")
 		(units
 			(unit
 				(name "A")

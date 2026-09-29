@@ -1,3 +1,5 @@
+# Historical design notes from the earlier YAML workflow. The active circuit
+# source is stackup/board.kdl and stackup/parts.kdl.
 project:
   name: Snips Controller
   revision: 0.1
@@ -836,7 +838,9 @@ groups:
   # -------------------------------------------------------------------------
   # 11. SK6812 RGB LED (NeoPixel-compatible)
   # -------------------------------------------------------------------------
-  # SK6812 chosen over WS2812B for explicit 3.3V VDD compatibility.
+  # Historical choice of SK6812 assumed 3.3V compatibility. The SK6812MINI-E
+  # datasheet actually specifies 3.7V minimum, so the routed 3V3 supply is
+  # outside its stated operating range; see stackup/README.md.
   # Pin and protocol compatible with WS2812B — driven via ESP32-S3's RMT
   # peripheral (pin 37), the standard driver mechanism for this timing.
   # R_RGB: 300-500Ω series on DIN for signal integrity (standard practice).
@@ -1047,9 +1051,9 @@ groups:
 #     first instruction in firmware or power cuts when user releases the
 #     power button.
 #
-# 11. WS2812 DIN series resistor (R_RGB = 330Ω) placed close to the RGB_DIN
-#     pad (pin 37). WS2812 runs at 3.3V supply (reduced brightness vs 5V
-#     nominal — acceptable for status indicator).
+# 11. SK6812 DIN series resistor R_RGB placed close to the RGB_DIN
+#     pad (pin 37). The LED is supplied at 3.3V, below its specified 3.7V
+#     minimum; reduced brightness alone is not the full risk.
 #
 # 12. Macro buttons are direct-wired (no scan matrix, no anti-ghosting
 #     diodes needed) — see MCU_Core section for why.

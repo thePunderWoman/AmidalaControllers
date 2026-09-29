@@ -14,7 +14,7 @@ Uses libngspice, which KiCad bundles (there is no ngspice CLI). Set NGSPICE_LIB 
     python3 scripts/spice/latch_sim.py --cap 0        # without C_LATCH_G1: shows the insertion blip
     python3 scripts/spice/latch_sim.py --scenario press -v
 
-The netlist below mirrors PCB/power_control.kicad_sch by hand. When that sheet changes, update the
+The netlist below mirrors PCB/stackup/board.kdl by hand. When that circuit changes, update the
 values/topology here and rerun. See scripts/spice/README.md for what is and is not modeled.
 """
 import argparse
@@ -31,7 +31,7 @@ LIB_CANDIDATES = [
     "libngspice.so",
 ]
 
-# Component values, mirroring power_control.kicad_sch (R_BTN_PU1 returns to 3V3, not VSYS).
+# Component values, mirroring PCB/stackup/parts.kdl (R_BTN_PU1 returns to 3V3, not VSYS).
 R_BTN_PU1 = "100k"
 C_DBNC1 = "100n"
 R_INV_BASE1 = "100k"

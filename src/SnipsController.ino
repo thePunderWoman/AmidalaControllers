@@ -219,7 +219,7 @@ void setup() {
   }
 
   // Confirmed against real hardware during bring-up: this line idles HIGH
-  // (100kOhm R_PWR_SENSE pull-up to 3V3, per PCB/power_control.kicad_sch)
+  // (100kOhm R_PWR_SENSE pull-up to 3V3, per PCB/stackup/board.kdl)
   // and the switch pulls it to GND when held — active-low, same sense as
   // every other button, just via an external pull-up instead of the
   // internal one. The original active-high assumption had this backwards,

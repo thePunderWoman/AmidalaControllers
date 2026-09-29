@@ -67,3 +67,8 @@ PCB/production/misc/*
 # ERC report JSON scratch files (from kicad-cli sch erc)
 PCB/erc*.json
 PCB/full_erc*.json
+
+# Local Stackup library checkout for development
+manifest.local.kdl
+.stackup/
+ci/stackup/target/

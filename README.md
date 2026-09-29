@@ -19,7 +19,7 @@
 
 **Awaiting prototype PCBs.**
 
-Schematics, part matching, and layout review are complete; boards are in the ordering/fab pipeline. See [PCB/README.md](PCB/README.md) for the full hardware writeup and [PCB/design-review-2026-08-23.md](PCB/design-review-2026-08-23.md)
+The Stackup circuit design, part matching, and layout review are complete; boards are in the ordering/fab pipeline. See [PCB/README.md](PCB/README.md) for the full hardware writeup and [PCB/design-review-2026-08-23.md](PCB/design-review-2026-08-23.md)
 for the latest design review. PCBs will likely arrive middle to late September. Once the controllers have been validated, we'll start ordering larger runs and make them available for people to buy.
 
 ## What they are
@@ -65,7 +65,7 @@ This is yet to be determined since we're so early in the prototype stage, but th
 |---|---|
 | [`src/`](src) | ESP32-S3 firmware (PlatformIO) |
 | [`test/`](test) | Native unit tests (no hardware required) |
-| [`PCB/`](PCB) | KiCad schematics, layout, GPIO reference, and design notes |
+| [`PCB/`](PCB) | Stackup circuit design, KiCad layout, GPIO reference, and design notes |
 | [`scripts/`](scripts) | BOM/part-matching tooling |
 
 ## Development

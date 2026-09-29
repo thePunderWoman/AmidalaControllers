@@ -1,13 +1,8 @@
 # Snips Controller — ESP32-S3-WROOM-1 GPIO Table
 
-> **⚠ Known kicaddy bug (2026-08-17):** the yaml's `footprint:` field is not
-> currently applied by `kicaddy compile` — compiled `.kicad_sch` files have
-> blank/wrong Footprint properties for most components right now. The
-> `footprint:` values in `snips_controller.yaml` are still accurate as
-> documentation of intent; they're just not making it into the compiled
-> output yet. **Don't start PCB layout from the current compiled schematic's
-> footprints** until this is fixed — assign footprints manually in the
-> KiCad GUI in the meantime, or wait for the fix.
+> The current circuit and footprint choices are in `PCB/stackup/board.kdl`
+> and `PCB/stackup/parts.kdl`. References to the older YAML and KiCad schematic
+> below describe the design history; use Stackup for changes.
 
 > **MCU:** ESP32-S3-WROOM-1 module (pre-certified, integrated flash +
 > crystal + WiFi/BT radio + PCB antenna). No external RF design, flash,
@@ -281,8 +276,7 @@ on VDD (10nF, 100pF, 2.2nF) rather than this board's usual single
 in a preliminary-datasheet figure and should be visually re-checked
 against the datasheet before fab.**
 
-**Status: in the schematic/yaml**, on its own `Accelerometer` sheet
-(`PCB/accelerometer.kicad_sch`), wired into `snips_controller.yaml`, with
+**Status: in Stackup** (`PCB/stackup/board.kdl`), with
 a hand-authored symbol + footprint (`SnipsControllers_Custom:QMA6100P`) —
 pad geometry pulled from JLCPCB/LCSC's own EasyEDA component data (LCSC
 C2887190) rather than estimated from the datasheet's low-resolution

@@ -1,0 +1,30 @@
+// Snips-specific GuliKit thumbstick assembly.
+
+part component_J_STICK1 {
+    reference "J"
+    symbol "SnipsControllers_Custom:GuliKit_HallStick"
+    value "GuliKit_Thumbstick"
+    description "OEM-replacement-style hall/TMR analog thumbstick with center-push switch (ALPS RKJXV1224 / C&K THB001P footprint family). 2-axis potentiometer-emulation interface, not a simple VCC/GND/X/Y/SW breakout: pins 1/2/3 are the X axis low/wiper/high, pins 1'/2'/3' are the Y axis low/wiper/high, pins a/c are the switch (b/d are mechanically-redundant duplicate switch legs, intentionally unconnected). Drive 1 and 1' to GND, 3 and 3' to 3V3; read wipers 2 (X) and 2' (Y) on ADC pins; wire switch a to a GPIO and c to GND. Adapted from dbenoy/thumbstick-breakout (CC-BY-SA 4.0, Copyright (c) Daniel Benoy)."
+    pin p_1 passive
+    pin p_2 output
+    pin p_3 passive
+    pin p_1_ passive
+    pin p_2_ output
+    pin p_3_ passive
+    pin p_a passive
+    pin p_b passive
+    pin p_c passive
+    pin p_d passive
+    package pcb footprint="SnipsControllers_Custom:GuliKit_HallStick" {
+        pad p_1 "1"
+        pad p_2 "2"
+        pad p_3 "3"
+        pad p_1_ "1'"
+        pad p_2_ "2'"
+        pad p_3_ "3'"
+        pad p_a "a"
+        pad p_b "b"
+        pad p_c "c"
+        pad p_d "d"
+    }
+}

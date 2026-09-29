@@ -1,12 +1,48 @@
 name: CI
 
 on:
+  workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, stackup]
   pull_request:
-    branches: [main]
+    branches: [main, stackup]
 
 jobs:
+  stackup-check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout Stackup KiCad plugin
+        uses: actions/checkout@v4
+        with:
+          repository: stackup-eda/stackup
+          ref: v0.1.3
+          path: stackup-tool
+
+      - name: Install Rust 1.96
+        run: rustup toolchain install 1.96.0 --profile minimal
+
+      - name: Check Stackup design
+        run: cargo +1.96.0 run --locked --manifest-path ci/stackup/Cargo.toml -- check PCB/stackup/board.kdl --locked
+
+      - name: Check purchasing BOM
+        run: cargo +1.96.0 run --locked --manifest-path ci/stackup/Cargo.toml -- bom PCB/stackup/board.kdl --locked -o /tmp/snips-bom.csv
+
+      - name: Install KiCad 10
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y software-properties-common
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get update
+          sudo apt-get install -y --install-recommends kicad
+
+      - name: Check PCB sync
+        run: |
+          /usr/bin/python3 ci/check_pcb_sync.py PCB/snips_controller.kicad_pcb \
+            --stackup ci/stackup/target/debug/snips-stackup-check \
+            --plugin-dir stackup-tool/kicad-plugin
+
   native-tests:
     runs-on: ubuntu-latest
     steps:

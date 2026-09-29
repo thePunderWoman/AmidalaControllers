@@ -2,6 +2,11 @@
 
 A wireless handheld controller for R2-D2 droid operation, designed for use at public events and conventions. Communicates with the droid via XBee3 Zigbee radio in a packetized state-report architecture.
 
+The electrical design is in [Stackup KDL](stackup/board.kdl), using the pinned
+Stackup library plus a [local thumbstick model](stackup/parts.kdl). The existing [KiCad PCB](snips_controller.kicad_pcb) is linked
+through `snips_controller.stackup_sch`; sync it with the Stackup KiCad plugin. Run
+`stackup check PCB/stackup/board.kdl` from the repository root before syncing.
+
 ## Hardware Overview
 
 | Component | Part | Notes | Layout diagram |
@@ -12,7 +17,7 @@ A wireless handheld controller for R2-D2 droid operation, designed for use at pu
 | Hall trigger | DRV5055A2 | Ratiometric linear hall effect, 3.3V | — |
 | Thumbstick | GuliKit hall effect module | Native 3.3V, analog X/Y + click | — |
 | Buttons | Omron B3F series | Tactile momentary clicky | — |
-| RGB LED | SK6812 NeoPixel-compatible | RMT-driven, 3.3V native, single LED status indicator | — |
+| RGB LED | SK6812 NeoPixel-compatible | RMT-driven status indicator; specified supply begins at 3.7 V, but board supplies 3.3 V | — |
 | Charger | bq25185 | USB/DC input, power path, 4.2V/500mA | [diagram](diagrams/power_charger_layout.md) |
 | Buck | TLV62569 | 3.3V output, 1A | [diagram](diagrams/power_buck_layout.md) |
 | Battery | 18650 or 14500 Li-ion | Swappable single cell, TBD empirically | — |
@@ -27,9 +32,9 @@ against the actual component datasheet, not just the schematic. See
 [`diagrams/README.md`](diagrams/README.md) for the full list and how the
 files are organized.
 
-- [Buck converter](diagrams/power_buck_layout.md) — `power_buck.kicad_sch`
-- [Charger](diagrams/power_charger_layout.md) — `power_charger.kicad_sch`
-- [Power latch](diagrams/power_control_layout.md) — `power_control.kicad_sch`
+- [Buck converter](diagrams/power_buck_layout.md) — `/Power_Buck/*` nets in Stackup
+- [Charger](diagrams/power_charger_layout.md) — `/Power_Charger/*` nets in Stackup
+- [Power latch](diagrams/power_control_layout.md) — `/Power_Control/*` nets in Stackup
 
 ## GPIO Assignment
 
@@ -212,7 +217,7 @@ Recommended bringup order:
 - Shutdown: firmware detects 3-second hold on pin 38 → graceful shutdown → pin 36 LOW → power cut
 - bq25185 STAT1 → pin 39 (open-drain, 10kΩ pull-up to 3V3)
 - Battery voltage sense → pin 7 via external R_VSYS1/R_VSYS2 divider (reads VSYS/3 via ADC1)
-- All logic is 3.3V native — ESP32-S3-WROOM-1, DRV5055, GuliKit thumbstick, SK6812
+- ESP32-S3-WROOM-1, DRV5055, and GuliKit thumbstick use the 3V3 rail. The SK6812 also uses it, but its 3.7 V minimum supply makes that LED connection out of specification.
 
 No firmware ADC-gating workaround needed for battery sense — WiFi is
 fully on-die on ESP32-S3 and doesn't share any exposed GPIO/ADC path
