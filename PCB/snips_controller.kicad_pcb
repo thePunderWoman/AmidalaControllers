@@ -10183,6 +10183,28 @@
 				)
 			)
 		)
+		(property "MF" "GuliKit"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b9294487-7c81-4d6a-ba42-41b30ef13931")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GuliKit_Thumbstick"
+			(at 0 2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d7a65aa1-c035-4481-bb4f-725faedeca5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/43319c6c-a25e-5ed1-b08a-2fd013ecdd04")
 		(units
 			(unit

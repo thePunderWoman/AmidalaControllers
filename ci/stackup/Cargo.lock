@@ -243,9 +243,9 @@ checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
 
 [[package]]
 name = "stackup-eda"
-version = "0.1.3"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "51059d3027f65d1045bc7cec8375ec26a487411cf6b5cea02822c5b552b7060f"
+checksum = "75a6b8652668d21b6683d266d22d10a0f5c975aab0d70e17aa447525e36d7172"
 dependencies = [
  "miette",
  "stackup-eda-parser",
@@ -253,9 +253,9 @@ dependencies = [
 
 [[package]]
 name = "stackup-eda-parser"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d31c9d11ee6f7920ee762e8706bdef2218b3450aafbe71de3a4fa3cd209ef87"
+checksum = "c75b7ab62576796cf3c81ea908e232aaba1b72cd43430594f0bd449922ee0360"
 dependencies = [
  "kdl",
  "miette",

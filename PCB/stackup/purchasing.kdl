@@ -1,0 +1,172 @@
+// Board-selected purchasing parts, preserving the previous factory BOM.
+// Values and footprints are checked against each matched placement.
+
+mpn "0402CG101J500NT" manufacturer="FH (Guangdong Fenghua Advanced Tech)" value="100pF" footprint="Capacitor_SMD:C_0402_1005Metric" {
+    catalog lcsc="C1546"
+}
+
+mpn "0402CG470J500NT" manufacturer="FH (Guangdong Fenghua Advanced Tech)" value="47pF" footprint="Capacitor_SMD:C_0402_1005Metric" {
+    catalog lcsc="C1567"
+}
+
+mpn "0402WGF1000TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="100Ω" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C25076"
+}
+
+mpn "0402WGF1002TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="10kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C25744"
+}
+
+mpn "0402WGF1003TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="100kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C25741"
+}
+
+mpn "0402WGF1004TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="1MΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C26083"
+}
+
+mpn "0402WGF2003TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="200kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C25764"
+}
+
+mpn "0402WGF4700TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="470Ω" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C25117"
+}
+
+mpn "0402WGF5101TCE" manufacturer="UNI-ROYAL(Uniroyal Elec)" value="5.1kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C25905"
+}
+
+mpn "1N4148W" manufacturer="ST(Semtech)" value="1N4148W" footprint="Diode_SMD:D_SOD-123" {
+    catalog lcsc="C81598"
+}
+
+mpn "1TS009A-1800-5000-CT" manufacturer="Hongyuan Precision" value="6x6x5mm SMD Tactile" footprint="Button_Switch_SMD:SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm" {
+    catalog lcsc="C319409"
+}
+
+mpn "AC0402FR-07604RL" manufacturer="Yageo" value="604Ω" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C227167"
+}
+
+mpn "AO3400A" manufacturer="Alpha & Omega Semicon" value="AO3400A" footprint="Package_TO_SOT_SMD:SOT-23" {
+    catalog lcsc="C20917"
+}
+
+mpn "AO3401A" manufacturer="Alpha & Omega Semicon" value="AO3401A" footprint="Package_TO_SOT_SMD:SOT-23" {
+    catalog lcsc="C15127"
+}
+
+mpn "BAT54W-7-F" manufacturer="Diodes Incorporated" value="BAT54W-7-F" footprint="Package_TO_SOT_SMD:SOT-323_SC-70" {
+    catalog lcsc="C134417"
+}
+
+mpn "BQ25185DLHR" manufacturer="Texas Instruments" value="BQ25185DLHR" footprint="BQ25185DLHR:IC_BQ25185DLHR" {
+    catalog lcsc="C19725033"
+}
+
+mpn "CC0402JRNPO9BN390" manufacturer="Yageo" value="39pF" footprint="Capacitor_SMD:C_0402_1005Metric" {
+    catalog lcsc="C106223"
+}
+
+mpn "CL05B103KB5NNNC" manufacturer="Samsung Electro-Mechanics" value="10nF" footprint="Capacitor_SMD:C_0402_1005Metric" {
+    catalog lcsc="C15195"
+}
+
+mpn "CL05B104KO5NNNC" manufacturer="Samsung Electro-Mechanics" value="100nF" footprint="Capacitor_SMD:C_0402_1005Metric" {
+    catalog lcsc="C1525"
+}
+
+mpn "CL05B222KB5NNNC" manufacturer="Samsung Electro-Mechanics" value="2.2nF" footprint="Capacitor_SMD:C_0402_1005Metric" {
+    catalog lcsc="C84703"
+}
+
+mpn "CL10A105KB8NNNC" manufacturer="Samsung Electro-Mechanics" value="1µF" footprint="Capacitor_SMD:C_0603_1608Metric" {
+    catalog lcsc="C15849"
+}
+
+mpn "CL10A106KP8NNNC" manufacturer="Samsung Electro-Mechanics" value="10µF" footprint="Capacitor_SMD:C_0603_1608Metric" {
+    catalog lcsc="C19702"
+}
+
+mpn "CL21A106KAYNNNE" manufacturer="Samsung Electro-Mechanics" value="10µF" footprint="Capacitor_SMD:C_0805_2012Metric" {
+    catalog lcsc="C15850"
+}
+
+mpn "CL21A226MAQNNNE" manufacturer="Samsung Electro-Mechanics" value="22µF" footprint="Capacitor_SMD:C_0805_2012Metric" {
+    catalog lcsc="C45783"
+}
+
+mpn "DRV5055A2QLPGM" manufacturer="Texas Instruments" value="DRV5055A2QLPGM" footprint="Package_TO_SOT_THT:TO-92_Inline"
+
+mpn "ESP32-S3-WROOM-1-N8" manufacturer="Espressif Systems" value="ESP32-S3-WROOM-1-N8" footprint="Espressif:ESP32-S3-WROOM-1" {
+    catalog lcsc="C2913198" mouser="356-ESP32S3WROOM1N8"
+}
+
+mpn "EVQP2T02M" manufacturer="Panasonic" value="Panasonic_EVQP2" footprint="Button_Switch_SMD:SW_SPST_EVQP2_ShortPushTravel_H2.1mm" {
+    catalog lcsc="C2915174"
+}
+
+// Internal assembly identifier: the pre-port PCB named the GuliKit hall stick
+// but recorded no orderable manufacturer part number. This is hand installed.
+mpn "GuliKit_Thumbstick" manufacturer="GuliKit" value="GuliKit_Thumbstick" footprint="SnipsControllers_Custom:GuliKit_HallStick"
+
+mpn "MMBT3904(RANGE:100-300)" manufacturer="Jiangsu Changjing Electronics Technology Co., Ltd." value="MMBT3904(RANGE:100-300)" footprint="Package_TO_SOT_SMD:SOT-23" {
+    catalog lcsc="C20526"
+}
+
+mpn "QMA6100P" manufacturer="QST" value="QMA6100P" footprint="SnipsControllers_Custom:QMA6100P" {
+    catalog lcsc="C2887190"
+}
+
+mpn "RC0402FR-0718KL" manufacturer="Yageo" value="18kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C138044"
+}
+
+mpn "RC0402FR-07255KL" manufacturer="Yageo" value="255kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C327361"
+}
+
+mpn "RC0402FR-0727RL" manufacturer="Yageo" value="27Ω" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C138021"
+}
+
+mpn "RC0402FR-0756K2L" manufacturer="Yageo" value="56.2kΩ" footprint="Resistor_SMD:R_0402_1005Metric" {
+    catalog lcsc="C183355"
+}
+
+mpn "S2B-PH-K(LF)(SN)" manufacturer="JST" value="PH 2-pin battery RIGHT-ANGLE HORIZONTAL" footprint="Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" {
+    catalog lcsc="C265016"
+}
+
+mpn "SK6812MINI-E" manufacturer="OPSCO Optoelectronics" value="SK6812MINI-E-012" footprint="SnipsControllers_Custom:SK6812MINI-E-012" {
+    catalog lcsc="C5149201"
+}
+
+mpn "SKRTLAE010" manufacturer="Alps Alpine" value="SKRTLAE010" footprint="Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010" {
+    catalog lcsc="C110293"
+}
+
+mpn "SM04B-SRSS-TB(LF)(SN)" manufacturer="JST" value="Qwiic connector" footprint="Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" {
+    catalog lcsc="C160404"
+}
+
+mpn "SRN4018-2R2M" manufacturer="Bourns" value="2.2µH" footprint="Inductor_SMD:L_Bourns-SRN4018" {
+    catalog lcsc="C913207"
+}
+
+mpn "TLV62569DBVR" manufacturer="Texas Instruments" value="TLV62569DBVR" footprint="Package_TO_SOT_SMD:SOT-23-5" {
+    catalog lcsc="C141836"
+}
+
+mpn "TPPESD5V0S1BA" manufacturer="TECH PUBLIC" value="TPPESD5V0S1BA" footprint="Diode_SMD:D_SOD-323" {
+    catalog lcsc="C587144"
+}
+
+mpn "TYPE-C-31-M-12" manufacturer="Hroparts Elec" value="USB-C" footprint="Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" {
+    catalog lcsc="C165948"
+}
+
+mpn "XB3-24Z8UT-J" manufacturer="Digi International" value="XBee3" footprint="Xbee3:XB324Z8UTJ" {
+    catalog mouser="888-XB3-24Z8UT-J"
+}
