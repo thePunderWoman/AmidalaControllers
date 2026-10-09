@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.5*%
-%TF.CreationDate,2026-09-24T09:42:42-07:00*%
+%TF.CreationDate,2026-10-08T19:54:05-07:00*%
 %TF.ProjectId,snips_controller,736e6970-735f-4636-9f6e-74726f6c6c65,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Component,L1,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.5) date 2026-09-24 09:42:42*
+G04 Created by KiCad (PCBNEW 10.0.5) date 2026-10-08 19:54:05*
 %MOMM*%
 %LPD*%
 G01*
@@ -30,7 +30,7 @@ G04 APERTURE END LIST*
 D10*
 %TO.C,U_XBEE1*%
 %TO.CFtp,XB324Z8UTJ*%
-%TO.CVal,XBee3 | XB3-24Z8UT-J | Digi International | XBee through-hole*%
+%TO.CVal,XBee3*%
 %TO.CLbN,Xbee3*%
 %TO.CMnt,TH*%
 %TO.CRot,-90*%
@@ -87,7 +87,7 @@ X142000000Y-149500000D03*
 D10*
 %TO.C,SW_MACRO2*%
 %TO.CFtp,SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm*%
-%TO.CVal,6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm*%
+%TO.CVal,6x6x5mm SMD Tactile*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -120,7 +120,7 @@ X140500000Y-112500000D03*
 D10*
 %TO.C,SW_MACRO5*%
 %TO.CFtp,SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm*%
-%TO.CVal,6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm*%
+%TO.CVal,6x6x5mm SMD Tactile*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -151,7 +151,7 @@ D13*
 X140500000Y-121250000D03*
 %TD*%
 D10*
-%TO.C,REF\u005Cu002A\u005Cu002A*%
+%TO.C,FID1*%
 %TO.CFtp,Fiducial_1mm_Mask2mm*%
 %TO.CVal,Fiducial_1mm_Mask2mm*%
 %TO.CLbN,Fiducial*%
@@ -197,13 +197,13 @@ X124282545Y-80413784D01*
 X124505967Y-80403750D01*
 X124727598Y-80433771D01*
 D13*
-%TO.P,REF\u005Cu002A\u005Cu002A,*%
+%TO.P,FID1,*%
 X124450000Y-81650000D03*
 %TD*%
 D10*
 %TO.C,R_XBEE_RST1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,10kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -222,34 +222,9 @@ D13*
 X136740000Y-130000000D03*
 %TD*%
 D10*
-%TO.C,D_RGB1*%
-%TO.CFtp,SK6812MINI-E-012*%
-%TO.CVal,SK6812MINI-E-012 | SK6812MINI-E | OPSCO Optoelectronics | SMD 3.2x2.8mm*%
-%TO.CLbN,SnipsControllers_Custom*%
-%TO.CMnt,SMD*%
-%TO.CRot,0*%
-X146550000Y-156650000D03*
-D11*
-X149735000Y-155005000D02*
-X149735000Y-158295000D01*
-X143365000Y-158295000D01*
-X143365000Y-155005000D01*
-X149735000Y-155005000D01*
-D12*
-%TO.P,D_RGB1,1,VSS_1*%
-X144280000Y-157710000D03*
-D13*
-%TO.P,D_RGB1,2,DIN_2*%
-X144280000Y-155590000D03*
-%TO.P,D_RGB1,3,VDD_3*%
-X148820000Y-155590000D03*
-%TO.P,D_RGB1,4,DOUT_4*%
-X148820000Y-157710000D03*
-%TD*%
-D10*
 %TO.C,C_XBEE_RC1*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -270,7 +245,7 @@ X134250000Y-131250000D03*
 D10*
 %TO.C,SW_MACRO6*%
 %TO.CFtp,SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm*%
-%TO.CVal,6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm*%
+%TO.CVal,6x6x5mm SMD Tactile*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -303,7 +278,7 @@ X150750000Y-121250000D03*
 D10*
 %TO.C,C_RGB1*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -324,7 +299,7 @@ X150500000Y-152270000D03*
 D10*
 %TO.C,SW_MACRO3*%
 %TO.CFtp,SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm*%
-%TO.CVal,6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm*%
+%TO.CVal,6x6x5mm SMD Tactile*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -357,7 +332,7 @@ X150750000Y-112500000D03*
 D10*
 %TO.C,C_XBEE_VCC1*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -378,7 +353,7 @@ X141000000Y-129980000D03*
 D10*
 %TO.C,R_XBEE_RC1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,0402WGF1000TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,100Ω*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -399,7 +374,7 @@ X134240000Y-130000000D03*
 D10*
 %TO.C,R_USB_DM1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,RC0402FR-0727RL | Yageo | 0402*%
+%TO.CVal,27Ω*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -420,7 +395,7 @@ X127750000Y-153250000D03*
 D10*
 %TO.C,SW_TRIG_DIG1*%
 %TO.CFtp,SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010*%
-%TO.CVal,SKRTLAE010 | Alps Alpine | SMD tactile horizontal*%
+%TO.CVal,SKRTLAE010*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -448,7 +423,7 @@ X122875000Y-60700000D03*
 D10*
 %TO.C,R_EN_PU1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,10kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -469,7 +444,7 @@ X126050000Y-79070000D03*
 D10*
 %TO.C,U_MCU1*%
 %TO.CFtp,ESP32-S3-WROOM-1*%
-%TO.CVal,ESP32-S3-WROOM-1-N8 | Espressif Systems | SMD module 18x25.5mm*%
+%TO.CVal,ESP32-S3-WROOM-1-N8*%
 %TO.CLbN,Espressif*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -578,7 +553,7 @@ X137900000Y-73770000D03*
 D10*
 %TO.C,SW_THR_UP1*%
 %TO.CFtp,SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010*%
-%TO.CVal,SKRTLAE010 | Alps Alpine | SMD tactile horizontal*%
+%TO.CVal,SKRTLAE010*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -604,9 +579,33 @@ X120700000Y-88650000D03*
 X120700000Y-92350000D03*
 %TD*%
 D10*
+%TO.C,D_RGB1*%
+%TO.CFtp,SK6812MINI-HS-012*%
+%TO.CVal,SK6812MINI-HS-012*%
+%TO.CMnt,SMD*%
+%TO.CRot,0*%
+X146550000Y-156650000D03*
+D11*
+X149195000Y-154355000D02*
+X149195000Y-158945000D01*
+X143905000Y-158945000D01*
+X143905000Y-154355000D01*
+X149195000Y-154355000D01*
+D12*
+%TO.P,D_RGB1,1*%
+X148200000Y-157550000D03*
+D13*
+%TO.P,D_RGB1,2*%
+X148200000Y-155750000D03*
+%TO.P,D_RGB1,3*%
+X144900000Y-155750000D03*
+%TO.P,D_RGB1,4*%
+X144900000Y-157550000D03*
+%TD*%
+D10*
 %TO.C,U_OLED1*%
 %TO.CFtp,JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal*%
-%TO.CVal,JST-SH_4Pin_OLED | SM04B-SRSS-TB(LF)(SN) | JST | SMD horizontal 1.00mm 4-pin*%
+%TO.CVal,Qwiic connector*%
 %TO.CLbN,Connector_JST*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -646,7 +645,7 @@ X126800000Y-72875000D03*
 D10*
 %TO.C,R_CC2*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,5.1kΩ | 0402WGF5101TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,5.1kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -667,7 +666,7 @@ X144760000Y-152750000D03*
 D10*
 %TO.C,C_XBEE_VCC4*%
 %TO.CFtp,C_0603_1608Metric*%
-%TO.CVal,10µF | CL10A106KP8NNNC | Samsung Electro-Mechanics | 0603*%
+%TO.CVal,10µF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -688,7 +687,7 @@ X142500000Y-134550000D03*
 D10*
 %TO.C,C_OLED_2*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -709,7 +708,7 @@ X122520000Y-67000000D03*
 D10*
 %TO.C,SW_BOOT1*%
 %TO.CFtp,SW_SPST_EVQP2_ShortPushTravel_H2.1mm*%
-%TO.CVal,Panasonic_EVQP2 | EVQP2T02M | Panasonic | SMD tactile 2.1mm*%
+%TO.CVal,Panasonic_EVQP2*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -732,7 +731,7 @@ X153350000Y-145525000D03*
 D10*
 %TO.C,SW_VOL_DN1*%
 %TO.CFtp,SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010*%
-%TO.CVal,SKRTLAE010 | Alps Alpine | SMD tactile horizontal*%
+%TO.CVal,SKRTLAE010*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -760,7 +759,7 @@ X154250000Y-98675000D03*
 D10*
 %TO.C,SW_MACRO4*%
 %TO.CFtp,SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm*%
-%TO.CVal,6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm*%
+%TO.CVal,6x6x5mm SMD Tactile*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -793,7 +792,7 @@ X130250000Y-121250000D03*
 D10*
 %TO.C,J_USB1*%
 %TO.CFtp,USB_C_Receptacle_HRO_TYPE-C-31-M-12*%
-%TO.CVal,USB-C | TYPE-C-31-M-12 | Hroparts Elec | USB-C receptacle*%
+%TO.CVal,USB-C*%
 %TO.CLbN,Connector_USB*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -850,7 +849,7 @@ X141820000Y-158150000D03*
 D10*
 %TO.C,C_XBEE_VCC2*%
 %TO.CFtp,C_0603_1608Metric*%
-%TO.CVal,1µF | CL10A105KB8NNNC | Samsung Electro-Mechanics | 0603*%
+%TO.CVal,1µF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -913,7 +912,7 @@ X140750000Y-105500000D03*
 D10*
 %TO.C,C_DBNC1*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -934,7 +933,7 @@ X126500000Y-153520000D03*
 D10*
 %TO.C,R_RGB1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,0402WGF4700TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,470Ω*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -955,7 +954,7 @@ X148250000Y-152240000D03*
 D10*
 %TO.C,R_CC1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,5.1kΩ | 0402WGF5101TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,5.1kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -976,7 +975,7 @@ X130250000Y-154270000D03*
 D10*
 %TO.C,C_3V3_2*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -995,7 +994,7 @@ D13*
 X127500000Y-65550000D03*
 %TD*%
 D10*
-%TO.C,REF\u005Cu002A\u005Cu002A*%
+%TO.C,FID2*%
 %TO.CFtp,Fiducial_1mm_Mask2mm*%
 %TO.CVal,Fiducial_1mm_Mask2mm*%
 %TO.CLbN,Fiducial*%
@@ -1041,13 +1040,13 @@ X151132545Y-126063784D01*
 X151355967Y-126053750D01*
 X151577598Y-126083771D01*
 D13*
-%TO.P,REF\u005Cu002A\u005Cu002A,*%
+%TO.P,FID2,*%
 X151300000Y-127300000D03*
 %TD*%
 D10*
 %TO.C,C_3V3_1*%
 %TO.CFtp,C_0603_1608Metric*%
-%TO.CVal,10µF | CL10A106KP8NNNC | Samsung Electro-Mechanics | 0603*%
+%TO.CVal,10µF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -1068,7 +1067,7 @@ X126000000Y-64725000D03*
 D10*
 %TO.C,R_VSYS1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,200kΩ | 0402WGF2003TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,200kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -1089,7 +1088,7 @@ X122800000Y-84600000D03*
 D10*
 %TO.C,R_USB_DP1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,RC0402FR-0727RL | Yageo | 0402*%
+%TO.CVal,27Ω*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -1110,7 +1109,7 @@ X129000000Y-153250000D03*
 D10*
 %TO.C,SW_THR_DN1*%
 %TO.CFtp,SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010*%
-%TO.CVal,SKRTLAE010 | Alps Alpine | SMD tactile horizontal*%
+%TO.CVal,SKRTLAE010*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -1138,7 +1137,7 @@ X120700000Y-102375000D03*
 D10*
 %TO.C,C_XBEE_VCC3*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,47pF | 0402CG470J500NT | FH (Guangdong Fenghua Advanced Tech) | 0402*%
+%TO.CVal,47pF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -1159,7 +1158,7 @@ X142250000Y-129980000D03*
 D10*
 %TO.C,SW_VOL_UP1*%
 %TO.CFtp,SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010*%
-%TO.CVal,SKRTLAE010 | Alps Alpine | SMD tactile horizontal*%
+%TO.CVal,SKRTLAE010*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -1187,7 +1186,7 @@ X154250000Y-88650000D03*
 D10*
 %TO.C,C_OLED_1*%
 %TO.CFtp,C_0805_2012Metric*%
-%TO.CVal,10µF | CL21A106KAYNNNE | Samsung Electro-Mechanics | 0805*%
+%TO.CVal,10µF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -1208,7 +1207,7 @@ X121550000Y-65500000D03*
 D10*
 %TO.C,SW_MACRO1*%
 %TO.CFtp,SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm*%
-%TO.CVal,6x6x5mm SMD Tactile | 1TS009A-1800-5000-CT | Hongyuan Precision | SMD tactile 6x6x5mm*%
+%TO.CVal,6x6x5mm SMD Tactile*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -1241,7 +1240,7 @@ X130250000Y-112500000D03*
 D10*
 %TO.C,R_VSYS2*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,100kΩ | 0402WGF1003TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,100kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,180*%
@@ -1260,7 +1259,7 @@ D13*
 X121770000Y-83400000D03*
 %TD*%
 D10*
-%TO.C,REF\u005Cu002A\u005Cu002A*%
+%TO.C,FID3*%
 %TO.CFtp,Fiducial_1mm_Mask2mm*%
 %TO.CVal,Fiducial_1mm_Mask2mm*%
 %TO.CLbN,Fiducial*%
@@ -1306,13 +1305,13 @@ X146832545Y-148863784D01*
 X147055967Y-148853750D01*
 X147277598Y-148883771D01*
 D13*
-%TO.P,REF\u005Cu002A\u005Cu002A,*%
+%TO.P,FID3,*%
 X147000000Y-150100000D03*
 %TD*%
 D10*
 %TO.C,C_STICK1*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,100nF | CL05B104KO5NNNC | Samsung Electro-Mechanics | 0402*%
+%TO.CVal,100nF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -1333,7 +1332,7 @@ X148500000Y-93480000D03*
 D10*
 %TO.C,R_XBEE_ATTN_PU1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,10kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%
@@ -1354,7 +1353,7 @@ X139600000Y-147800000D03*
 D10*
 %TO.C,SW_PWR1*%
 %TO.CFtp,SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010*%
-%TO.CVal,SKRTLAE010 | Alps Alpine | SMD tactile horizontal*%
+%TO.CVal,SKRTLAE010*%
 %TO.CLbN,Button_Switch_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,0*%
@@ -1382,7 +1381,7 @@ X130850000Y-159000000D03*
 D10*
 %TO.C,C_3V3_3*%
 %TO.CFtp,C_0402_1005Metric*%
-%TO.CVal,39pF | CC0402JRNPO9BN390 | Yageo | 0402*%
+%TO.CVal,39pF*%
 %TO.CLbN,Capacitor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,90*%
@@ -1403,7 +1402,7 @@ X127300000Y-66700000D03*
 D10*
 %TO.C,R_BOOT_PU1*%
 %TO.CFtp,R_0402_1005Metric*%
-%TO.CVal,10kΩ | 0402WGF1002TCE | UNI-ROYAL(Uniroyal Elec) | 0402*%
+%TO.CVal,10kΩ*%
 %TO.CLbN,Resistor_SMD*%
 %TO.CMnt,SMD*%
 %TO.CRot,-90*%

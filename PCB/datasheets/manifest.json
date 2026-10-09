@@ -104,20 +104,20 @@
       "error": "No datasheet URL or all download methods failed",
       "last_attempt": "2026-08-24T03:08:25.585855+00:00"
     },
-    "SK6812MINI-E": {
-      "file": "SK6812MINI-E_RGB_LED_with_integrated_controller.pdf",
-      "manufacturer": "",
-      "description": "RGB LED with integrated controller",
-      "value": "SK6812MINI-E",
-      "datasheet_url": "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf",
-      "downloaded_date": "2026-08-24T03:08:25.840572+00:00",
-      "source": "schematic",
+    "SK6812MINI-HS": {
+      "file": "SK6812MINI-HS-012.pdf",
+      "manufacturer": "OPSCO Optoelectronics",
+      "description": "Addressable RGB LED with integrated driver, top-mount 3.5x3.5mm PLCC4",
+      "value": "SK6812MINI-HS-012",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/d15550987339dcd676f3ed17cb498c41.pdf?productCode=C2922787",
+      "downloaded_date": "2026-10-08T00:00:00+00:00",
+      "source": "manual",
       "status": "ok",
       "references": [
         "D_RGB1"
       ],
-      "size_bytes": 451375,
-      "verification": "likely"
+      "size_bytes": 766946,
+      "verification": "manufacturer"
     },
     "CC0603KRX5R7BB106": {
       "manufacturer": "",
