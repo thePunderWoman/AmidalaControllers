@@ -8,7 +8,6 @@ use "@stackup/discrete/diode/diode"
 use "@stackup/discrete/diode/tvs"
 use "@stackup/discrete/fet/ao3400a"
 use "@stackup/discrete/fet/ao3401a"
-use "@stackup/discrete/led/sk6812mini-e"
 use "@stackup/micro/esp32s3"
 use "@stackup/passives"
 use "@stackup/power/buck/tlv62569"
@@ -50,9 +49,8 @@ design snips_controller {
     place bat54w "D_INV_ISO1" designator="D_INV_ISO1" footprint="Package_TO_SOT_SMD:SOT-323_SC-70" value="BAT54W-7-F"
     place diode "D_OR1" designator="D_OR1" footprint="Diode_SMD:D_SOD-123" value="1N4148W"
     place diode "D_OR2" designator="D_OR2" footprint="Diode_SMD:D_SOD-123" value="1N4148W"
-    place sk6812mini-e "D_RGB1" designator="D_RGB1" footprint="SnipsControllers_Custom:SK6812MINI-E-012" value="SK6812MINI-E-012" {
-        without supply
-        ignore "vdd.net.voltage" reason="verified to operate at 3.3V" // Library minimum: 3.7 V; this board supplies 3.3 V.
+    place sk6812mini-hs "D_RGB1" designator="D_RGB1" footprint="SnipsControllers_Custom:SK6812MINI-HS-012" value="SK6812MINI-HS-012" {
+        ignore "vdd.net.voltage" reason="run at 3.3V like the MINI-E it replaces" // Datasheet minimum: 3.7 V; this board supplies 3.3 V.
     }
     place tvs "D_VBUS_TVS1" designator="D_VBUS_TVS1" footprint="Diode_SMD:D_SOD-323" value="TPPESD5V0S1BA"
     place component_J_STICK1 "J_STICK1" designator="J_STICK1" footprint="SnipsControllers_Custom:GuliKit_HallStick" value="GuliKit_Thumbstick" hand=#true
@@ -161,7 +159,7 @@ design snips_controller {
     circuit "C_3V3_1.A" "C_3V3_2.A" "C_3V3_3.A" "C_ACCEL_1.A" "C_ACCEL_2.A" "C_ACCEL_3.A" "C_BUCK_OUT1.A" "C_HALL1.A" "C_OLED_1.A" "C_OLED_2.A" "C_RGB1.A" "C_STICK1.A" "C_XBEE_VCC1.A" "C_XBEE_VCC2.A" "C_XBEE_VCC3.A" "C_XBEE_VCC4.A" "D_RGB1.VDD" "J_STICK1.p_3" "J_STICK1.p_3_" "L_BUCK1.B" "R_BOOT_PU1.B" "R_BTN_PU1.A" "R_EN_PU1.B" "R_FB1.B" "R_STAT1.B" "R_STAT2.B" "R_XBEE_ATTN_PU1.A" "R_XBEE_RST1.A" "U_ACCEL1.SENB" "U_ACCEL1.VDD" "U_HALL1.VCC" "U_MCU1.3V3" "U_OLED1.2" "U_XBEE1.VCC" name="3V3"
     set "C_BUCK_OUT1.A" net.voltage "3.3V"
     circuit "U_ACCEL1.INT1" "U_MCU1.IO46" name="ACCEL_INT1"
-    circuit "BT1.2" "C_3V3_1.B" "C_3V3_2.B" "C_3V3_3.B" "C_ACCEL_1.B" "C_ACCEL_2.B" "C_ACCEL_3.B" "C_BAT1.B" "C_BUCK_IN1.B" "C_BUCK_OUT1.B" "C_DBNC1.B" "C_HALL1.B" "C_LATCH_G1.A" "C_OLED_1.B" "C_OLED_2.B" "C_RGB1.B" "C_STICK1.B" "C_SYS_1.B" "C_SYS_2.B" "C_VIN_1.B" "C_VIN_2.B" "C_XBEE_RC1.B" "C_XBEE_VCC1.B" "C_XBEE_VCC2.B" "C_XBEE_VCC3.B" "C_XBEE_VCC4.B" "D_RGB1.VSS" "D_VBUS_TVS1.A2" "J_STICK1.p_1" "J_STICK1.p_1_" "J_STICK1.p_c" "J_USB1.GND" "J_USB1.SHIELD" "Q_INV1.EMITTER" "Q_LATCH1.SOURCE" "R_CC1.B" "R_CC2.B" "R_FB2.B" "R_ISET1.B" "R_LATCH_G1.A" "R_PWR_EN_PD1.rail.gnd" "R_TS1.B" "R_VSET1.B" "R_VSYS2.B" "SW_BOOT1.1" "SW_MACRO1.2" "SW_MACRO2.2" "SW_MACRO3.2" "SW_MACRO4.2" "SW_MACRO5.2" "SW_MACRO6.2" "SW_PWR1.2" "SW_THR_DN1.2" "SW_THR_UP1.2" "SW_TRIG_DIG1.2" "SW_VOL_DN1.2" "SW_VOL_UP1.2" "U_ACCEL1.AD0" "U_ACCEL1.RESV2" "U_ACCEL1.RESV1" "U_ACCEL1.GNDIO" "U_ACCEL1.GND" "U_BUCK1.GND" "U_CHG1.PAD" "U_CHG1.CE" "U_CHG1.GND" "U_HALL1.GND" "U_MCU1.GND" "U_OLED1.1" "U_XBEE1.GND" name="GND"
+    circuit "BT1.2" "C_3V3_1.B" "C_3V3_2.B" "C_3V3_3.B" "C_ACCEL_1.B" "C_ACCEL_2.B" "C_ACCEL_3.B" "C_BAT1.B" "C_BUCK_IN1.B" "C_BUCK_OUT1.B" "C_DBNC1.B" "C_HALL1.B" "C_LATCH_G1.A" "C_OLED_1.B" "C_OLED_2.B" "C_RGB1.B" "C_STICK1.B" "C_SYS_1.B" "C_SYS_2.B" "C_VIN_1.B" "C_VIN_2.B" "C_XBEE_RC1.B" "C_XBEE_VCC1.B" "C_XBEE_VCC2.B" "C_XBEE_VCC3.B" "C_XBEE_VCC4.B" "D_RGB1.GND" "D_VBUS_TVS1.A2" "J_STICK1.p_1" "J_STICK1.p_1_" "J_STICK1.p_c" "J_USB1.GND" "J_USB1.SHIELD" "Q_INV1.EMITTER" "Q_LATCH1.SOURCE" "R_CC1.B" "R_CC2.B" "R_FB2.B" "R_ISET1.B" "R_LATCH_G1.A" "R_PWR_EN_PD1.rail.gnd" "R_TS1.B" "R_VSET1.B" "R_VSYS2.B" "SW_BOOT1.1" "SW_MACRO1.2" "SW_MACRO2.2" "SW_MACRO3.2" "SW_MACRO4.2" "SW_MACRO5.2" "SW_MACRO6.2" "SW_PWR1.2" "SW_THR_DN1.2" "SW_THR_UP1.2" "SW_TRIG_DIG1.2" "SW_VOL_DN1.2" "SW_VOL_UP1.2" "U_ACCEL1.AD0" "U_ACCEL1.RESV2" "U_ACCEL1.RESV1" "U_ACCEL1.GNDIO" "U_ACCEL1.GND" "U_BUCK1.GND" "U_CHG1.PAD" "U_CHG1.CE" "U_CHG1.GND" "U_HALL1.GND" "U_MCU1.GND" "U_OLED1.1" "U_XBEE1.GND" name="GND"
     circuit "BT1.1" "C_BAT1.A" "U_CHG1.BAT" name="VBAT"
     circuit "C_VIN_1.A" "C_VIN_2.A" "D_VBUS_TVS1.A1" "J_USB1.VBUS" "U_CHG1.IN" name="VBUS"
     circuit "C_BUCK_IN1.A" "C_SYS_1.A" "C_SYS_2.A" "Q_PWR1.SOURCE" "R_GATE1.A" "R_INV_BASE1.A" "R_INV_PU1.A" "R_VSYS1.A" "U_BUCK1.VIN" "U_CHG1.SYS" name="VSYS"
@@ -373,9 +371,9 @@ design snips_controller {
         set mpn="SM04B-SRSS-TB(LF)(SN)"
     }
     match placement {
-        when value="SK6812MINI-E-012"
-        when footprint="SnipsControllers_Custom:SK6812MINI-E-012"
-        set mpn="SK6812MINI-E"
+        when value="SK6812MINI-HS-012"
+        when footprint="SnipsControllers_Custom:SK6812MINI-HS-012"
+        set mpn="SK6812MINI-HS"
     }
     match placement {
         when value="SKRTLAE010"

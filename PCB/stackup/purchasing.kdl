@@ -139,8 +139,8 @@ mpn "S2B-PH-K(LF)(SN)" manufacturer="JST" value="PH 2-pin battery RIGHT-ANGLE HO
     catalog lcsc="C265016"
 }
 
-mpn "SK6812MINI-E" manufacturer="OPSCO Optoelectronics" value="SK6812MINI-E-012" footprint="SnipsControllers_Custom:SK6812MINI-E-012" {
-    catalog lcsc="C5149201"
+mpn "SK6812MINI-HS" manufacturer="OPSCO Optoelectronics" value="SK6812MINI-HS-012" footprint="SnipsControllers_Custom:SK6812MINI-HS-012" {
+    catalog lcsc="C2922787"
 }
 
 mpn "SKRTLAE010" manufacturer="Alps Alpine" value="SKRTLAE010" footprint="Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010" {
